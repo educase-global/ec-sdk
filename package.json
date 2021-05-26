@@ -13,5 +13,8 @@
   },
   "contributors": [],
   "bundleDependencies": false,
-  "dependencies": {}
+  "dependencies": {
+    "axios": "0.21.1"
+  },
+  "peerDependencies": {}
 }

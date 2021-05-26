@@ -1,9 +1,0 @@
-'use strict';
-
-///////////////////////////Public Functions START//////////////////////////////
-const Common = { // Public functions accessible by other modules
-
-};
-export default Common;
-
-////////////////////////////Public Functions END///////////////////////////////

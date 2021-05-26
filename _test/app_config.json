@@ -1,0 +1,30 @@
+{
+
+  "API_URL_DEFAULT_SB"                  : "https://9qwtac0b91.execute-api.us-east-1.amazonaws.com/prod",
+  "API_URL_DEFAULT_PROD"                : "https://9qwtac0b91.execute-api.us-east-1.amazonaws.com/prod",
+
+  "API_URL_SB"                          : "https://9qwtac0b91.execute-api.us-east-1.amazonaws.com/prod",
+  "API_URL_PROD"                        : "https://9qwtac0b91.execute-api.us-east-1.amazonaws.com/prod",
+
+  "API_PROD"                            : true,
+
+  "MEDIA_URL_SB"                        : "https://9qwtac0b91.execute-api.us-east-1.amazonaws.com/prod",
+  "MEDIA_URL_PROD"                      : "https://9qwtac0b91.execute-api.us-east-1.amazonaws.com/prod",
+
+  "NO_CASUAL_LOGGING"                   : false,
+  "NO_ERROR_LOGGING"                    : false,
+  "NO_TIME_AUDITING"                    : false,
+
+  "APP_ID"                              : "demo",
+
+  "APP_PLATFORM"                        : "android",
+
+  "BRAND_ID"                            : "cvdf2",
+
+  "APP_SERVICE_COUNTRIES"               : ["us", "in"],
+
+  "APP_DEFAULT_COUNTRY"                 : "us",
+
+  "APP_SUPPORTED_LOCALES"               : ["en", "hi"]
+
+}

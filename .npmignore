@@ -1,0 +1,11 @@
+# package directories
+node_modules
+_test
+.md
+package-lock.json
+# Serverless directories
+# Mac OS Files
+*.DS_Store
+.AppleDouble
+.LSOverride
+._*

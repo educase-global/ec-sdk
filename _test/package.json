@@ -1,0 +1,16 @@
+{
+  "name": "lib-test",
+  "description": "Test Cases",
+  "version": "1.0.0",
+  "main": "test.js",
+  "keywords": [],
+  "private": true,
+  "license": "Private",
+  "author": {},
+  "contributors": [],
+  "bundleDependencies": false,
+  "dependencies": {
+    "ec-sdk": "file:../"
+  },
+  "devDependencies": {}
+}
