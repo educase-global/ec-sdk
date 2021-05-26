@@ -1,0 +1,17 @@
+{
+  "name": "educase-sdk",
+  "description": "Educase SDK",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "private": true,
+  "license": "Private",
+  "author": {
+    "name": "Brijesh Singh",
+    "email": "brijeshsinghcs0013@gmail.com"
+  },
+  "contributors": [],
+  "bundleDependencies": false,
+  "dependencies": {}
+}
