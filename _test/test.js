@@ -12,19 +12,24 @@ const EC_SDK = require('ec-sdk')(
 
 
 
+/* ENQUIRY MODULE HELPER FUNCTIONS
+
+
  
- /* EC_SDK.Enquiry.getEnquiryList(
+ /* EC_SDK.Enquiry.getEnquiryListAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
     }
     console.log('data', data)
   },
-  {auth : auth_bearer_token}
+   {auth : auth_bearer_token,
+  params:{}
+}
 );     */
 
 
- /* EC_SDK.Enquiry.viewEnquirySources(
+ /* EC_SDK.Enquiry.viewEnquirySourcesAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -32,89 +37,112 @@ const EC_SDK = require('ec-sdk')(
     console.log('data', data)
   },
   {
-    auth : auth_bearer_token ,
-  }
+  auth : auth_bearer_token,
+  params:{}
+}
 );  */
 
 
 
- EC_SDK.Enquiry.addEnquirySources(
+ /* EC_SDK.Enquiry.addEnquirySourcesAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
     }
     console.log('data', data)
   },
-  {auth : auth_bearer_token}
-);  
+   {
+  auth : auth_bearer_token,
+  params:{}
+}
+);   */
 
 
 
-/* EC_SDK.Enquiry.deleteEnquirySources(
+/* EC_SDK.Enquiry.deleteEnquirySourcesAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
     }
     console.log('data', data)
   },
-  {auth : auth_bearer_token}
+  {auth : auth_bearer_token,
+  params:{}}
 ); */
 
 
-/* EC_SDK.Enquiry.getEnquirySourcesList(
+/* EC_SDK.Enquiry.getEnquirySourcesAdminList(
   function(err, data){
     if(err){
       return console.log('something went wrong');
     }
     console.log('data', data)
   },
-  {auth : auth_bearer_token}
+  {auth : auth_bearer_token,
+  params:{}}
 ); */
 
 
-/* EC_SDK.Enquiry.updateEnquirySources(
+/* EC_SDK.Enquiry.updateEnquirySourcesAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
     }
     console.log('data', data)
   },
-  {auth : auth_bearer_token}
+  {
+  auth : auth_bearer_token,
+  params:{}
+}
 ); */
+
+
+
 
 
 /* FEEDBACK MODULE HELPER FUNCTIONS
 
 
-/* EC_SDK.Feedback.getFeedbackList(
+
+
+/* EC_SDK.Feedback.getFeedbackListAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
     }
     console.log('data', data)
   },
-  {auth : auth_bearer_token}
+   {
+  auth : auth_bearer_token,
+  params:{}
+}
 ); */
 
 
-/* EC_SDK.Feedback.deleteFeedback(
+/* EC_SDK.Feedback.deleteFeedbackAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
     }
     console.log('data', data)
   },
-  {auth : auth_bearer_token}
+   {
+  auth : auth_bearer_token,
+  params:{}
+}
 );
  */
 
-/* EC_SDK.Feedback.replyFeedback(
+/* EC_SDK.Feedback.replyFeedbackAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
     }
     console.log('data', data)
   },
-  {auth : auth_bearer_token}
+   {
+  auth : auth_bearer_token,
+  params:{}
+}
 ); */
  
