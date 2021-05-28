@@ -3,7 +3,6 @@
   "description": "Educase SDK",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "keywords": [],
   "private": true,
   "license": "Private",
@@ -14,7 +13,7 @@
   "contributors": [],
   "bundleDependencies": false,
   "dependencies": {
-    "axios": "0.21.1"
-  },
-  "peerDependencies": {}
+    "axios": "0.21.1",
+    "form-data": "^4.0.0"
+  }
 }

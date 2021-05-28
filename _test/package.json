@@ -6,11 +6,12 @@
   "keywords": [],
   "private": true,
   "license": "Private",
-  "author": {},
+  "author": "",
   "contributors": [],
   "bundleDependencies": false,
   "dependencies": {
-    "ec-sdk": "file:../"
-  },
-  "devDependencies": {}
+    "axios": "0.21.1",
+    "ec-sdk": "file:../",
+    "form-data": "^4.0.0"
+  }
 }
