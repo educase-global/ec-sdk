@@ -226,6 +226,7 @@ EC_SDK.Feedback.addFeedbackParent(
   auth : auth_bearer_token_admin,
   params:{
     class_id : "1",
+    section_id : "1",
     student_id : "1"
   }
 }
