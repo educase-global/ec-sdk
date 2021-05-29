@@ -11,6 +11,26 @@ const EC_SDK = require('ec-sdk')(
 );
 
 
+/* Authentication (login) FUNCTION*/
+
+ EC_SDK.Authentication.userLogin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  params:{
+    username : "sanketschool@gmail.com",
+    password : "11223344",
+    unique_device_id : "web"
+  }
+}
+);    
+
+
+
 
 /* ENQUIRY MODULE HELPER FUNCTIONS
 
