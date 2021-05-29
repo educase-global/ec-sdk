@@ -21,11 +21,12 @@ module.exports = function(shared_libs, config){
 const EC_SDK =  function(lib){
 
   return {
-    Utils: lib.Utils,
-    Customer: lib.Customer,
-    Enquiry:lib.Enquiry,
-    Feedback:lib.Feedback,
-    TeacherComment:lib.TeacherComment
+    Utils : lib.Utils,
+    Customer : lib.Customer,
+    Enquiry : lib.Enquiry,
+    Feedback : lib.Feedback,
+    TeacherComment : lib.TeacherComment,
+    Authentication : lib.Authentication
   };
 
 }
