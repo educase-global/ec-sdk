@@ -2,7 +2,7 @@
 'use strict';
 
 const APP_CONFIG = require('./app_config.json');
-const auth_bearer_token_admin = '4bad0c449091dedd008f0f0924d72bf0';
+const auth_bearer_token_admin = 'f21f9fc0f5238cac6b0c7ec09e1a2d24';
 const auth_bearer_token_parent = 'a8461e9dfdf37e47599fe059c8c28477';
 // Dependencies
 const EC_SDK = require('ec-sdk')(
@@ -38,7 +38,9 @@ const EC_SDK = require('ec-sdk')(
   },
   {
   auth : auth_bearer_token_admin,
-  params:{}
+  params:{
+    id : "1"
+  }
 }
 );  */
 
@@ -92,7 +94,11 @@ const EC_SDK = require('ec-sdk')(
   },
   {
   auth : auth_bearer_token_admin,
-  params:{}
+  params:{
+    source_name : "Test1",
+    status : "Active",
+    id: "1"
+  }
 }
 ); */
 
@@ -194,7 +200,7 @@ EC_SDK.Feedback.addFeedbackParent(
 }
 );  */
 
- EC_SDK.TeacherComment.deleteTeacherCommentAdmin(
+ /* EC_SDK.TeacherComment.deleteTeacherCommentAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -207,7 +213,7 @@ EC_SDK.Feedback.addFeedbackParent(
     id : "1"
   }
 }
-);  
+);   */
 
 /* EC_SDK.TeacherComment. addTeacherCommentAdmin(
   function(err, data){
@@ -218,9 +224,13 @@ EC_SDK.Feedback.addFeedbackParent(
   },
    {
   auth : auth_bearer_token_admin,
-  params:{}
+  params:{
+    class_id : "1",
+    student_id : "1"
+  }
 }
 );  */
+
 
 /* EC_SDK.TeacherComment.editTeacherCommentAdmin(
   function(err, data){
@@ -231,7 +241,11 @@ EC_SDK.Feedback.addFeedbackParent(
   },
    {
   auth : auth_bearer_token_admin,
-  params:{}
+  params:{
+      class_id : "1",
+    section_id : "1",
+    student_id : "1"
+  }
 }
 );  */
 
@@ -244,7 +258,13 @@ EC_SDK.Feedback.addFeedbackParent(
   },
    {
   auth : auth_bearer_token_admin,
-  params:{}
+  params:{
+      class_id : "1",
+    section_id : "1",
+    student_id : "1",
+    comment : "ok",
+    id : "1"
+  }
 }
 );  */
 
@@ -258,11 +278,14 @@ EC_SDK.Feedback.addFeedbackParent(
   },
    {
   auth : auth_bearer_token_parent,
-  params:{}
+  params:{
+    teacher_comment_id : "1",
+    reply_comment : "test"
+  }
 }
 );  */
 
-/* EC_SDK.TeacherComment. getTeacherCommentListParent(
+/* EC_SDK.TeacherComment.getTeacherCommentListParent(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -271,7 +294,9 @@ EC_SDK.Feedback.addFeedbackParent(
   },
    {
   auth : auth_bearer_token_parent,
-  params:{}
+  params:{
+
+  }
 }
 );  */
 
@@ -285,6 +310,8 @@ EC_SDK.Feedback.addFeedbackParent(
   },
    {
   auth : auth_bearer_token_parent,
-  params:{}
+  params:{
+    teacher_comment_id : "1"
+  }
 }
 );  */
