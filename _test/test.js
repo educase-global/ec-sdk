@@ -445,7 +445,7 @@ EC_SDK.Feedback.addFeedbackParent(
 }
 );  */
 
-
+/* 
 EC_SDK.MealCalendar.editMealCalendarAdmin(
   function(err, data){
     if(err){
@@ -456,10 +456,10 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
    {
   auth : auth_bearer_token_admin,
   params:{
-    id : "1"
+    
   }
 }
-); 
+);  */
 
 
 /* EC_SDK.MealCalendar.updateMealCalendarAdmin(
@@ -477,7 +477,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
 }
 );  */
 
-EC_SDK.MealCalendar.deleteMealCalendarAdmin(
+/* EC_SDK.MealCalendar.deleteMealCalendarAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -490,10 +490,10 @@ EC_SDK.MealCalendar.deleteMealCalendarAdmin(
     id : "1"
   }
 }
-); 
+);  */
 
 
- EC_SDK.MealCalendar.getMealCalendarParent(
+ /* EC_SDK.MealCalendar.getMealCalendarParent(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -503,9 +503,8 @@ EC_SDK.MealCalendar.deleteMealCalendarAdmin(
    {
   auth : auth_bearer_token_parent,
   params:{
-    perPage : "10",
-    page : "1",
+    date : "09-02-2021"
   }
 }
-);   
+);    */
 
