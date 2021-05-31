@@ -2,8 +2,8 @@
 'use strict';
 
 const APP_CONFIG = require('./app_config.json');
-const auth_bearer_token_admin = 'f21f9fc0f5238cac6b0c7ec09e1a2d24';
-const auth_bearer_token_parent = '59650162c101d6e49e733a60ec089900';
+const auth_bearer_token_admin = '6922d6eaa746aedea1192dbba5a571ba';
+const auth_bearer_token_parent = '1869a90d096dfda42466e92b00bd9800';
 // Dependencies
 const EC_SDK = require('ec-sdk')(
   {},    // shared Library

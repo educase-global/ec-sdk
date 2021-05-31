@@ -26,7 +26,8 @@ const EC_SDK =  function(lib){
     Enquiry : lib.Enquiry,
     Feedback : lib.Feedback,
     TeacherComment : lib.TeacherComment,
-    Authentication : lib.Authentication
+    Authentication : lib.Authentication,
+    MealCalendar : lib.MealCalendar,
   };
 
 }
