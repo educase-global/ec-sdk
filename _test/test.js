@@ -2,8 +2,8 @@
 'use strict';
 
 const APP_CONFIG = require('./app_config.json');
-const auth_bearer_token_admin = 'f21f9fc0f5238cac6b0c7ec09e1a2d24';
-const auth_bearer_token_parent = 'a8461e9dfdf37e47599fe059c8c28477';
+const auth_bearer_token_admin = '6922d6eaa746aedea1192dbba5a571ba';
+const auth_bearer_token_parent = '1869a90d096dfda42466e92b00bd9800';
 // Dependencies
 const EC_SDK = require('ec-sdk')(
   {},    // shared Library
@@ -13,7 +13,7 @@ const EC_SDK = require('ec-sdk')(
 
 /* Authentication (login) FUNCTION*/
 
- EC_SDK.Authentication.userLogin(
+ /* EC_SDK.Authentication.userLogin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -28,7 +28,7 @@ const EC_SDK = require('ec-sdk')(
   }
 }
 );    
-
+ */
 
 
 
@@ -290,7 +290,7 @@ EC_SDK.Feedback.addFeedbackParent(
 );  */
 
 
-/* EC_SDK.TeacherComment.getTeacherCommentReplyParent(
+/* EC_SDK.TeacherComment.TeacherCommentReplyParent(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -305,6 +305,7 @@ EC_SDK.Feedback.addFeedbackParent(
   }
 }
 );  */
+
 
 /* EC_SDK.TeacherComment.getTeacherCommentListParent(
   function(err, data){
@@ -336,3 +337,174 @@ EC_SDK.Feedback.addFeedbackParent(
   }
 }
 );  */
+
+
+
+/* Meal calendar helper functions */
+
+/* EC_SDK.MealCalendar.getMenuNameAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{}
+}
+);  */
+
+
+/* EC_SDK.MealCalendar.addMenuNameAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{}
+}
+);  */
+
+
+/* EC_SDK.MealCalendar.editMenuNameAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    id : "2"
+  }
+}
+);  */
+
+/* EC_SDK.MealCalendar.updateMenuNameAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{}
+}
+);  */
+
+/* EC_SDK.MealCalendar.deleteMenuNameAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    id : "1"
+  }
+}
+);  */
+
+ /* EC_SDK.MealCalendar.getMealCalendarAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    perPage : "10",
+    page : "1",
+    search : ""
+  }
+}
+);   */
+
+/* EC_SDK.MealCalendar.addMealCalendarAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+);  */
+
+/* 
+EC_SDK.MealCalendar.editMealCalendarAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+);  */
+
+
+/* EC_SDK.MealCalendar.updateMealCalendarAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+);  */
+
+/* EC_SDK.MealCalendar.deleteMealCalendarAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    id : "1"
+  }
+}
+);  */
+
+
+ /* EC_SDK.MealCalendar.getMealCalendarParent(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_parent,
+  params:{
+    date : "09-02-2021"
+  }
+}
+);    */
+
