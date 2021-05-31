@@ -290,7 +290,7 @@ EC_SDK.Feedback.addFeedbackParent(
 );  */
 
 
-EC_SDK.TeacherComment.TeacherCommentReplyParent(
+/* EC_SDK.TeacherComment.TeacherCommentReplyParent(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -304,7 +304,8 @@ EC_SDK.TeacherComment.TeacherCommentReplyParent(
     reply_comment : "test"
   }
 }
-); 
+);  */
+
 
 /* EC_SDK.TeacherComment.getTeacherCommentListParent(
   function(err, data){
@@ -336,3 +337,175 @@ EC_SDK.TeacherComment.TeacherCommentReplyParent(
   }
 }
 );  */
+
+
+
+/* Meal calendar helper functions */
+
+/* EC_SDK.MealCalendar.getMenuNameAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{}
+}
+);  */
+
+
+/* EC_SDK.MealCalendar.addMenuNameAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{}
+}
+);  */
+
+
+/* EC_SDK.MealCalendar.editMenuNameAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    id : "2"
+  }
+}
+);  */
+
+/* EC_SDK.MealCalendar.updateMenuNameAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{}
+}
+);  */
+
+/* EC_SDK.MealCalendar.deleteMenuNameAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    id : "1"
+  }
+}
+);  */
+
+ /* EC_SDK.MealCalendar.getMealCalendarAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    perPage : "10",
+    page : "1",
+    search : ""
+  }
+}
+);   */
+
+/* EC_SDK.MealCalendar.addMealCalendarAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+);  */
+
+
+EC_SDK.MealCalendar.editMealCalendarAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    id : "1"
+  }
+}
+); 
+
+
+/* EC_SDK.MealCalendar.updateMealCalendarAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+);  */
+
+EC_SDK.MealCalendar.deleteMealCalendarAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    id : "1"
+  }
+}
+); 
+
+
+ EC_SDK.MealCalendar.getMealCalendarParent(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_parent,
+  params:{
+    perPage : "10",
+    page : "1",
+  }
+}
+);   
+
