@@ -3,7 +3,7 @@
 
 const APP_CONFIG = require('./app_config.json');
 const auth_bearer_token_admin = 'f21f9fc0f5238cac6b0c7ec09e1a2d24';
-const auth_bearer_token_parent = 'a8461e9dfdf37e47599fe059c8c28477';
+const auth_bearer_token_parent = '59650162c101d6e49e733a60ec089900';
 // Dependencies
 const EC_SDK = require('ec-sdk')(
   {},    // shared Library
@@ -13,7 +13,7 @@ const EC_SDK = require('ec-sdk')(
 
 /* Authentication (login) FUNCTION*/
 
- EC_SDK.Authentication.userLogin(
+ /* EC_SDK.Authentication.userLogin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -28,7 +28,7 @@ const EC_SDK = require('ec-sdk')(
   }
 }
 );    
-
+ */
 
 
 
@@ -290,7 +290,7 @@ EC_SDK.Feedback.addFeedbackParent(
 );  */
 
 
-/* EC_SDK.TeacherComment.getTeacherCommentReplyParent(
+EC_SDK.TeacherComment.TeacherCommentReplyParent(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -304,7 +304,7 @@ EC_SDK.Feedback.addFeedbackParent(
     reply_comment : "test"
   }
 }
-);  */
+); 
 
 /* EC_SDK.TeacherComment.getTeacherCommentListParent(
   function(err, data){
