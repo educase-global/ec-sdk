@@ -30,6 +30,53 @@ const EC_SDK = require('ec-sdk')(
 );    
  */
 
+/* EC_SDK.Authentication.guestLogin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  params:{
+    
+  }
+}
+); */
+
+
+/* EC_SDK.Authentication.addguestUser(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  params:{
+    
+  }
+}
+); */
+
+
+/* EC_SDK.Authentication.verifyGuestOTP(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  params:{
+    
+  }
+}
+); */
+
+
+
+
 
 
 /* ENQUIRY MODULE HELPER FUNCTIONS
