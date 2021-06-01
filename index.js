@@ -28,6 +28,8 @@ const EC_SDK =  function(lib){
     TeacherComment : lib.TeacherComment,
     Authentication : lib.Authentication,
     MealCalendar : lib.MealCalendar,
+    VirtualMeet : lib.VirtualMeet,
+    
   };
 
 }

@@ -2,7 +2,7 @@
 'use strict';
 
 const APP_CONFIG = require('./app_config.json');
-const auth_bearer_token_admin = '6922d6eaa746aedea1192dbba5a571ba';
+const auth_bearer_token_admin = '74913506d95f760dd54136e2ccac0792';
 const auth_bearer_token_parent = '1869a90d096dfda42466e92b00bd9800';
 // Dependencies
 const EC_SDK = require('ec-sdk')(
@@ -29,6 +29,53 @@ const EC_SDK = require('ec-sdk')(
 }
 );    
  */
+
+/* EC_SDK.Authentication.guestLogin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  params:{
+    
+  }
+}
+); */
+
+
+/* EC_SDK.Authentication.addguestUser(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  params:{
+    
+  }
+}
+); */
+
+
+/* EC_SDK.Authentication.verifyGuestOTP(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  params:{
+    
+  }
+}
+); */
+
+
+
 
 
 
@@ -339,6 +386,8 @@ EC_SDK.Feedback.addFeedbackParent(
 );  */
 
 
+///////////////////////////// END /////////////////////////////////
+
 
 /* Meal calendar helper functions */
 
@@ -508,3 +557,105 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
 }
 );    */
 
+///////////////////////////// END /////////////////////////////////
+
+
+/* Virtual meet helper Functions */
+
+
+/* EC_SDK.VirtualMeet.getVirtualMeetListAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+); 
+ */
+
+/* EC_SDK.VirtualMeet.addVirtualMeetAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+);  */
+
+
+/* EC_SDK.VirtualMeet.editVirtualMeetAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    id : "1"
+  }
+}
+); 
+ */
+
+/* EC_SDK.VirtualMeet.updateVirtualMeetAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+); 
+ */
+
+/* EC_SDK.VirtualMeet.deleteVirtualMeetAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    id : "1"
+  }
+}
+);  */
+
+/* EC_SDK.VirtualMeet.getVirtualMeetListParent(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_parent,
+  params:{
+    
+  }
+}
+);  */
+
+
+///////////////////////////// END /////////////////////////////////
