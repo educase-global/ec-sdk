@@ -1,19 +1,18 @@
 // Info: Test Cases
-'use strict';
+"use strict"
 
-const APP_CONFIG = require('./app_config.json');
-const auth_bearer_token_admin = '74913506d95f760dd54136e2ccac0792';
-const auth_bearer_token_parent = '1869a90d096dfda42466e92b00bd9800';
+const APP_CONFIG = require("./app_config.json")
+const auth_bearer_token_admin = "74913506d95f760dd54136e2ccac0792"
+const auth_bearer_token_parent = "1869a90d096dfda42466e92b00bd9800"
 // Dependencies
-const EC_SDK = require('ec-sdk')(
-  {},    // shared Library
+const EC_SDK = require("ec-sdk")(
+  {}, // shared Library
   APP_CONFIG
-);
-
+)
 
 /* Authentication (login) FUNCTION*/
 
- /* EC_SDK.Authentication.userLogin(
+/* EC_SDK.Authentication.userLogin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -44,7 +43,6 @@ const EC_SDK = require('ec-sdk')(
 }
 ); */
 
-
 /* EC_SDK.Authentication.addguestUser(
   function(err, data){
     if(err){
@@ -59,7 +57,6 @@ const EC_SDK = require('ec-sdk')(
 }
 ); */
 
-
 /* EC_SDK.Authentication.verifyGuestOTP(
   function(err, data){
     if(err){
@@ -73,11 +70,6 @@ const EC_SDK = require('ec-sdk')(
   }
 }
 ); */
-
-
-
-
-
 
 /* ENQUIRY MODULE HELPER FUNCTIONS
 
@@ -95,8 +87,7 @@ const EC_SDK = require('ec-sdk')(
 }
 );     */
 
-
- /* EC_SDK.Enquiry.viewEnquirySourcesAdmin(
+/* EC_SDK.Enquiry.viewEnquirySourcesAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -124,9 +115,7 @@ const EC_SDK = require('ec-sdk')(
 }
 ); */
 
-
-
- /* EC_SDK.Enquiry.deleteEnquirySourcesAdmin(
+/* EC_SDK.Enquiry.deleteEnquirySourcesAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -139,7 +128,6 @@ const EC_SDK = require('ec-sdk')(
 }
 );  */
 
-
 /* EC_SDK.Enquiry.getEnquirySourcesAdminList(
   function(err, data){
     if(err){
@@ -150,7 +138,6 @@ const EC_SDK = require('ec-sdk')(
   {auth : auth_bearer_token_admin,
   params:{}}
 ); */
-
 
 /* EC_SDK.Enquiry.updateEnquirySourcesAdmin(
   function(err, data){
@@ -168,7 +155,6 @@ const EC_SDK = require('ec-sdk')(
   }
 }
 ); */
-
 
 /* EC_SDK.Enquiry.viewEnquiryReasonsAdmin(
   function(err, data){
@@ -198,9 +184,7 @@ const EC_SDK = require('ec-sdk')(
 }
 ); */
 
-
-
- /* EC_SDK.Enquiry.deleteEnquiryReasonAdmin(
+/* EC_SDK.Enquiry.deleteEnquiryReasonAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -213,7 +197,6 @@ const EC_SDK = require('ec-sdk')(
 }
 );  */
 
-
 /* EC_SDK.Enquiry.getEnquiryReasonAdminList(
   function(err, data){
     if(err){
@@ -224,7 +207,6 @@ const EC_SDK = require('ec-sdk')(
   {auth : auth_bearer_token_admin,
   params:{}}
 ); */
-
 
 /* EC_SDK.Enquiry.updateEnquiryReasonAdmin(
   function(err, data){
@@ -242,8 +224,6 @@ const EC_SDK = require('ec-sdk')(
   }
 }
 ); */
-
-
 
 /* FEEDBACK MODULE HELPER FUNCTIONS
 
@@ -263,8 +243,7 @@ const EC_SDK = require('ec-sdk')(
 }
 ); */
 
-
- /* EC_SDK.Feedback.deleteFeedbackAdmin(
+/* EC_SDK.Feedback.deleteFeedbackAdmin(
    function(err, data){
      if(err){
        return console.log('something went wrong');
@@ -306,7 +285,6 @@ const EC_SDK = require('ec-sdk')(
 }
 ); */
 
-
 /* 
 EC_SDK.Feedback.addFeedbackParent(
   function(err, data){
@@ -321,12 +299,9 @@ EC_SDK.Feedback.addFeedbackParent(
 }
 ); */
 
+/* TEACHER COMMENT HELPER FUNCTIONS */
 
-
- /* TEACHER COMMENT HELPER FUNCTIONS */
-
-
- /* EC_SDK.TeacherComment.getTeacherCommentListAdmin(
+/* EC_SDK.TeacherComment.getTeacherCommentListAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -339,7 +314,7 @@ EC_SDK.Feedback.addFeedbackParent(
 }
 );  */
 
- /* EC_SDK.TeacherComment.deleteTeacherCommentAdmin(
+/* EC_SDK.TeacherComment.deleteTeacherCommentAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -371,25 +346,24 @@ EC_SDK.Feedback.addFeedbackParent(
 }
 );  */
 
-
-/* EC_SDK.TeacherComment.editTeacherCommentAdmin(
-  function(err, data){
-    if(err){
-      return console.log('something went wrong');
+/* EC_SDK.TeacherComment.detailTeacherCommentAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
     }
-    console.log('data', data)
+    console.log("data", data)
   },
-   {
-  auth : auth_bearer_token_admin,
-  params:{
-      class_id : "1",
-    section_id : "1",
-    student_id : "1"
+  {
+    auth: auth_bearer_token_admin,
+    params: {
+      class_id: "1",
+      section_id: "1",
+      student_id: "1"
+    }
   }
-}
-);  */
+) */
 
-/* EC_SDK.TeacherComment.updateTeacherCommentAdmin(
+/* EC_SDK.TeacherComment.replyTeacherCommentAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -408,7 +382,6 @@ EC_SDK.Feedback.addFeedbackParent(
 }
 );  */
 
-
 /* EC_SDK.TeacherComment.TeacherCommentReplyParent(
   function(err, data){
     if(err){
@@ -425,7 +398,6 @@ EC_SDK.Feedback.addFeedbackParent(
 }
 );  */
 
-
 /* EC_SDK.TeacherComment.getTeacherCommentListParent(
   function(err, data){
     if(err){
@@ -440,7 +412,6 @@ EC_SDK.Feedback.addFeedbackParent(
   }
 }
 );  */
-
 
 /* EC_SDK.TeacherComment.getTeacherCommentDetailParent(
   function(err, data){
@@ -457,9 +428,7 @@ EC_SDK.Feedback.addFeedbackParent(
 }
 );  */
 
-
 ///////////////////////////// END /////////////////////////////////
-
 
 /* Meal calendar helper functions */
 
@@ -476,7 +445,6 @@ EC_SDK.Feedback.addFeedbackParent(
 }
 );  */
 
-
 /* EC_SDK.MealCalendar.addMenuNameAdmin(
   function(err, data){
     if(err){
@@ -489,7 +457,6 @@ EC_SDK.Feedback.addFeedbackParent(
   params:{}
 }
 );  */
-
 
 /* EC_SDK.MealCalendar.editMenuNameAdmin(
   function(err, data){
@@ -534,7 +501,7 @@ EC_SDK.Feedback.addFeedbackParent(
 }
 );  */
 
- /* EC_SDK.MealCalendar.getMealCalendarAdmin(
+/* EC_SDK.MealCalendar.getMealCalendarAdmin(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -582,7 +549,6 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
 }
 );  */
 
-
 /* EC_SDK.MealCalendar.updateMealCalendarAdmin(
   function(err, data){
     if(err){
@@ -613,8 +579,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
 }
 );  */
 
-
- /* EC_SDK.MealCalendar.getMealCalendarParent(
+/* EC_SDK.MealCalendar.getMealCalendarParent(
   function(err, data){
     if(err){
       return console.log('something went wrong');
@@ -631,9 +596,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
 
 ///////////////////////////// END /////////////////////////////////
 
-
 /* Virtual meet helper Functions */
-
 
 /* EC_SDK.VirtualMeet.getVirtualMeetListAdmin(
   function(err, data){
@@ -665,7 +628,6 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
   }
 }
 );  */
-
 
 /* EC_SDK.VirtualMeet.editVirtualMeetAdmin(
   function(err, data){
@@ -729,7 +691,6 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
 }
 );  */
 
-
 ///////////////////////////// END /////////////////////////////////
 
 /* DROPDOWN HELPER FUNCTIONS */
@@ -764,7 +725,6 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
 }
 ); */
 
-
 /* EC_SDK.Dropdown.getStudentDropdown(
   function(err, data){
     if(err){
@@ -779,7 +739,6 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
   }
 }
 ); */
-
 
 /* EC_SDK.Dropdown.getFeeTypeDropdown(
   function(err, data){
