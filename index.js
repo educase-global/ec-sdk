@@ -29,8 +29,9 @@ const EC_SDK =  function(lib){
     Authentication : lib.Authentication,
     MealCalendar : lib.MealCalendar,
     VirtualMeet : lib.VirtualMeet,
+    Dropdown : lib.Dropdown
     
   };
-
+ 
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
