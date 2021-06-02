@@ -731,3 +731,112 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
 
 
 ///////////////////////////// END /////////////////////////////////
+
+/* DROPDOWN HELPER FUNCTIONS */
+
+/* EC_SDK.Dropdown.getClassDropdown(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+); */
+
+/* EC_SDK.Dropdown.getSectionDropdown(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+); */
+
+
+/* EC_SDK.Dropdown.getStudentDropdown(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+); */
+
+
+/* EC_SDK.Dropdown.getFeeTypeDropdown(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+); */
+
+/* EC_SDK.Dropdown.getEnquirySourcesDropdown(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+); */
+
+/* EC_SDK.Dropdown.getEnquiryReasonsDropdown(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+); */
+
+/* EC_SDK.Dropdown.getStudentList(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{
+    
+  }
+}
+); */
