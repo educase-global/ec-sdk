@@ -347,21 +347,21 @@ EC_SDK.Feedback.addFeedbackParent(
 );  */
 
 /* EC_SDK.TeacherComment.detailTeacherCommentAdmin(
-  function(err, data){
-    if(err){
-      return console.log('something went wrong');
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
     }
-    console.log('data', data)
+    console.log("data", data)
   },
-   {
-  auth : auth_bearer_token_admin,
-  params:{
-      class_id : "1",
-    section_id : "1",
-    student_id : "1"
+  {
+    auth: auth_bearer_token_admin,
+    params: {
+      class_id: "1",
+      section_id: "1",
+      student_id: "1"
+    }
   }
-}
-);  */
+) */
 
 /* EC_SDK.TeacherComment.replyTeacherCommentAdmin(
   function(err, data){
