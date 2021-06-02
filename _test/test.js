@@ -170,6 +170,78 @@ const EC_SDK = require('ec-sdk')(
 ); */
 
 
+/* EC_SDK.Enquiry.viewEnquiryReasonsAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+  {
+  auth : auth_bearer_token_admin,
+  params:{
+    id : "1"
+  }
+}
+);  */
+
+/* EC_SDK.Enquiry.addEnquiryReasonAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{ source_name: 'Test17', status: 'Active' }
+}
+); */
+
+
+
+ /* EC_SDK.Enquiry.deleteEnquiryReasonAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+  {
+    auth : auth_bearer_token_admin,
+  params:{id : "1"}
+}
+);  */
+
+
+/* EC_SDK.Enquiry.getEnquiryReasonAdminList(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+  {auth : auth_bearer_token_admin,
+  params:{}}
+); */
+
+
+/* EC_SDK.Enquiry.updateEnquiryReasonAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+  {
+  auth : auth_bearer_token_admin,
+  params:{
+    source_name : "Test1",
+    status : "Active",
+    id: "1"
+  }
+}
+); */
 
 
 
