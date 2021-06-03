@@ -877,3 +877,17 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
   }
 }
 ); */
+
+/* EC_SDK.Dropdown.getMeetingTypeList(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+ */
