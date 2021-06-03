@@ -225,6 +225,84 @@ const EC_SDK = require("ec-sdk")(
 }
 ); */
 
+/* EC_SDK.Enquiry.addEnquiryAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{ source_name: 'Test17', status: 'Active' }
+}
+); */
+
+/* EC_SDK.Enquiry.showEnquiryAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{ source_name: 'Test17', status: 'Active' }
+}
+); */
+
+/* EC_SDK.Enquiry.editEnquiryAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{ source_name: 'Test17', status: 'Active' }
+}
+); */
+
+/* EC_SDK.Enquiry.generateImportEnquiryAdmin(
+  function(err, data){
+    if(err){
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+   {
+  auth : auth_bearer_token_admin,
+  params:{ source_name: 'Test17', status: 'Active' }
+}
+); */
+
+// EC_SDK.Enquiry.exportEnquiryAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log("something went wrong")
+//     }
+//     console.log("data", data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: { source_name: "Test17", status: "Active" }
+//   }
+// )
+
+// EC_SDK.Enquiry.importEnquiryAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log("something went wrong")
+//     }
+//     console.log("data", data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: { source_name: "Test17", status: "Active" }
+//   }
+// )
+
 /* FEEDBACK MODULE HELPER FUNCTIONS
 
 
