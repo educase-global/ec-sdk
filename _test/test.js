@@ -321,6 +321,19 @@ const EC_SDK = require("ec-sdk")(
 }
 ); */
 
+/* EC_SDK.Feedback.getFeedbackDetailAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+) */
+
 /* EC_SDK.Feedback.deleteFeedbackAdmin(
    function(err, data){
      if(err){
@@ -362,6 +375,20 @@ const EC_SDK = require("ec-sdk")(
   params:{}
 }
 ); */
+
+/* EC_SDK.Feedback.getFeedbackDetailParent(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_parent,
+    params: {}
+  }
+)
+ */
 
 /* 
 EC_SDK.Feedback.addFeedbackParent(
