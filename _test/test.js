@@ -905,12 +905,226 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
 }
 ); */
 
-/* EC_SDK.Dropdown.getMeetingTypeList(
+
+// Attendance Helper Functions
+
+/* EC_SDK.Attendance.getStudentAttendanceDataAdmin(
   function (err, data) {
     if (err) {
       return console.log("something went wrong")
     }
-    console.log("data", data)
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.updateStudentAttendanceDataAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.getStaffAttendanceDataAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.updateStaffAttendanceDataAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.getStudentAttendanceReportAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.getStaffAttendanceReportAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.getHourSettingsListAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.addHourSettingsAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.deleteHourSettingsAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.getAttendanceSettingsListAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.addAttendanceSettingsAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.deleteAttendanceSettingsAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.getAbsenteeFormListAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.viewAbsenteeFormAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.getAbsentListParent(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.getAttendanceHomescreentParent(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
+
+EC_SDK.Attendance.postAbsentFormParent(
+
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+
+    // console.log("data", data)
+
   },
   {
     auth: auth_bearer_token_admin,
