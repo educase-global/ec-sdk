@@ -905,7 +905,6 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
 }
 ); */
 
-
 // Attendance Helper Functions
 
 /* EC_SDK.Attendance.getStudentAttendanceDataAdmin(
