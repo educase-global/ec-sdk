@@ -25,7 +25,8 @@ const EC_SDK = function (lib) {
     VirtualMeet: lib.VirtualMeet,
     Dropdown: lib.Dropdown,
     Attendance: lib.Attendance,
-    Diary: lib.Diary
+    Diary: lib.Diary,
+    Insta: lib.Insta
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
