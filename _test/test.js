@@ -875,20 +875,20 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
 }
 ); */
 
-/* EC_SDK.Dropdown.getEnquiryReasonsDropdown(
-  function(err, data){
-    if(err){
-      return console.log('something went wrong');
+/* EC_SDK.Enquiry.editEnquiryReasonAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
     }
-    console.log('data', data)
+    console.log("data", data)
   },
-   {
-  auth : auth_bearer_token_admin,
-  params:{
-    
+  {
+    auth: "6e38f5334913f0f1a4fd00bc889b387f",
+    params: {
+      id: "1"
+    }
   }
-}
-); */
+) */
 
 /* EC_SDK.Dropdown.getStudentList(
   function(err, data){
