@@ -875,7 +875,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
 }
 ); */
 
-EC_SDK.Enquiry.editEnquiryReasonAdmin(
+/* EC_SDK.Enquiry.editEnquiryReasonAdmin(
   function (err, data) {
     if (err) {
       return console.log("something went wrong")
@@ -888,7 +888,7 @@ EC_SDK.Enquiry.editEnquiryReasonAdmin(
       id: "1"
     }
   }
-)
+) */
 
 /* EC_SDK.Dropdown.getStudentList(
   function(err, data){
@@ -1131,3 +1131,17 @@ EC_SDK.Attendance.postAbsentFormParent(
   }
 )
  */
+
+EC_SDK.Homework.updateHomeworkAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
+    }
+
+    // console.log("data", data)
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {}
+  }
+)
