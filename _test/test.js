@@ -363,22 +363,6 @@ const EC_SDK = require("ec-sdk")(
 }
 ); */
 
-EC_SDK.Feedback.getFeedbackListParent(
-  function (err, data) {
-    if (err) {
-      return console.log("something went wrong")
-    }
-    console.log("data", data)
-  },
-  {
-    auth: "ccebd5ccd410e23dfb1894023bd29dc1",
-    params: {
-      perPage: "10",
-      page: "0"
-    }
-  }
-)
-
 /* EC_SDK.Feedback.getFeedbackDetailParent(
   function (err, data) {
     if (err) {
