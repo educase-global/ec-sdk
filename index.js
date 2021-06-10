@@ -28,7 +28,8 @@ const EC_SDK = function (lib) {
     Diary: lib.Diary,
     Insta: lib.Insta,
     Videos: lib.Videos,
-    Gallery: lib.Gallery
+    Gallery: lib.Gallery,
+    Homework: lib.Homework
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
