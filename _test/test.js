@@ -156,20 +156,20 @@ const EC_SDK = require("ec-sdk")(
 }
 ); */
 
-/* EC_SDK.Enquiry.viewEnquiryReasonsAdmin(
-  function(err, data){
-    if(err){
-      return console.log('something went wrong');
+EC_SDK.Enquiry.viewEnquiryReasonAdmin(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong")
     }
-    console.log('data', data)
+    console.log("data", data)
   },
   {
-  auth : auth_bearer_token_admin,
-  params:{
-    id : "1"
+    auth: auth_bearer_token_admin,
+    params: {
+      id: "1"
+    }
   }
-}
-);  */
+)
 
 /* EC_SDK.Enquiry.addEnquiryReasonAdmin(
   function(err, data){
@@ -377,19 +377,18 @@ const EC_SDK = require("ec-sdk")(
 )
  */
 
-/* 
-EC_SDK.Feedback.addFeedbackParent(
-  function(err, data){
-    if(err){
-      return console.log('something went wrong');
-    }
-    console.log('data', data)
-  },
-   {
-  auth : auth_bearer_token_parent,
-  params:{}
-}
-); */
+// EC_SDK.Feedback.addFeedbackParent(
+//   function(err, data){
+//     if(err){
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//    {
+//   auth : auth_bearer_token_parent,
+//   params:{}
+// }
+// );
 
 /* TEACHER COMMENT HELPER FUNCTIONS */
 
