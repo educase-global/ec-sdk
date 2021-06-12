@@ -156,21 +156,6 @@ const EC_SDK = require("ec-sdk")(
 }
 ); */
 
-EC_SDK.Enquiry.viewEnquiryReasonAdmin(
-  function (err, data) {
-    if (err) {
-      return console.log("something went wrong")
-    }
-    console.log("data", data)
-  },
-  {
-    auth: auth_bearer_token_admin,
-    params: {
-      id: "1"
-    }
-  }
-)
-
 /* EC_SDK.Enquiry.addEnquiryReasonAdmin(
   function(err, data){
     if(err){
@@ -689,22 +674,6 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
 
 /* Virtual meet helper Functions */
 
-/* EC_SDK.VirtualMeet.getVirtualMeetListAdmin(
-  function(err, data){
-    if(err){
-      return console.log('something went wrong');
-    }
-    console.log('data', data)
-  },
-   {
-  auth : auth_bearer_token_admin,
-  params:{
-    
-  }
-}
-); 
- */
-
 /* EC_SDK.VirtualMeet.addVirtualMeetAdmin(
   function(err, data){
     if(err){
@@ -1118,16 +1087,16 @@ EC_SDK.Attendance.postAbsentFormParent(
 )
  */
 
-EC_SDK.Homework.updateHomeworkAdmin(
-  function (err, data) {
-    if (err) {
-      return console.log("something went wrong")
-    }
+// EC_SDK.Homework.updateHomeworkAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log("something went wrong")
+//     }
 
-    // console.log("data", data)
-  },
-  {
-    auth: auth_bearer_token_admin,
-    params: {}
-  }
-)
+//     // console.log("data", data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {}
+//   }
+// )
