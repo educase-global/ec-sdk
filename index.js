@@ -32,7 +32,8 @@ const EC_SDK = function (lib) {
     Homework: lib.Homework,
     Student: lib.Student,
     Elearning: lib.Elearning,
-    Staff: lib.Staff
+    Staff: lib.Staff,
+    Event: lib.Event
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
