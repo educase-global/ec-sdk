@@ -1114,3 +1114,17 @@ EC_SDK.Attendance.postAbsentFormParent(
 //     params: {}
 //   }
 // )
+
+// EC_SDK.Holiday.getHolidayCalendarListAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log("something went wrong")
+//     }
+
+//     // console.log("data", data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {}
+//   }
+// )
