@@ -1128,3 +1128,5 @@ EC_SDK.Attendance.postAbsentFormParent(
 //     params: {}
 //   }
 // )
+
+// console.log(EC_SDK.Utils.convertToHumanReadableDate("2021-06-17 13:01:10"));

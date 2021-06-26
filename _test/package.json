@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "0.21.1",
     "ec-sdk": "file:../",
-    "form-data": "^4.0.0"
+    "form-data": "^4.0.0",
+    "moment": "^2.29.1"
   }
 }
