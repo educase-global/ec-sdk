@@ -1129,4 +1129,8 @@ EC_SDK.Attendance.postAbsentFormParent(
 //   }
 // )
 
+// console.log(EC_SDK.Utils.searchStringAuthentication("ab"));
+
+// console.log(EC_SDK.Utils.searchStringAuthentication(1234));
+
 // console.log(EC_SDK.Utils.convertToHumanReadableDate("2021-06-17 13:01:10"));
