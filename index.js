@@ -36,7 +36,8 @@ const EC_SDK = function (lib) {
     Event: lib.Event,
     Holiday: lib.Holiday,
     Configuration: lib.Configuration,
-    Birthday: lib.Birthday
+    Birthday: lib.Birthday,
+    Daycare: lib.Daycare
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
