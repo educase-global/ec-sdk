@@ -1115,19 +1115,23 @@ EC_SDK.Attendance.postAbsentFormParent(
 //   }
 // )
 
-EC_SDK.Daycare.getDaycareCategoryListAdmin(
-  function (err, data) {
-    if (err) {
-      return console.log("something went wrong")
-    }
+// EC_SDK.Daycare.getDaycareCategoryListAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log("something went wrong")
+//     }
 
-    // console.log("data", data)
-  },
-  {
-    auth: auth_bearer_token_admin,
-    params: {}
-  }
-)
+//     // console.log("data", data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {}
+//   }
+
+
+console.log(EC_SDK.Attendance.getStudentAttendanceStatusList())
+
+console.log(EC_SDK.Attendance.getStaffAttendanceStatusList())
 
 // console.log(EC_SDK.Utils.searchStringAuthentication("ab"));
 
