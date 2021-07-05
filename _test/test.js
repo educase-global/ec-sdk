@@ -1128,13 +1128,12 @@ EC_SDK.Attendance.postAbsentFormParent(
 //     params: {}
 //   }
 
+// console.log(EC_SDK.Attendance.getStudentAttendanceStatusList())
 
-console.log(EC_SDK.Attendance.getStudentAttendanceStatusList())
-
-console.log(EC_SDK.Attendance.getStaffAttendanceStatusList())
+// console.log(EC_SDK.Attendance.getStaffAttendanceStatusList())
 
 // console.log(EC_SDK.Utils.searchStringAuthentication("ab"));
 
 // console.log(EC_SDK.Utils.searchStringAuthentication(1234));
 
-console.log(EC_SDK.Utils.convertToHumanReadableDate("2021-06-17 13:01:10"));
+// console.log(EC_SDK.Utils.convertToHumanReadableDate(1625462766*1000));
