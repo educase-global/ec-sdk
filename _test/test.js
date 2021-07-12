@@ -1128,7 +1128,7 @@ EC_SDK.Attendance.postAbsentFormParent(
 //     params: {}
 //   }
 
-// console.log(EC_SDK.Attendance.getStudentAttendanceStatusList())
+//  console.log(EC_SDK.Attendance.getStudentAttendanceStatusList())
 
 // console.log(EC_SDK.Attendance.getStaffAttendanceStatusList())
 
