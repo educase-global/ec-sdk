@@ -11,19 +11,19 @@ const EC_SDK = require("ec-sdk")(
 )
 
 // Our program store function
-EC_SDK.OUR_PROGRAM.ourProgramStore(
-  function (err, data) {
-    if (err) {
-      return console.log('something went wrong');
-    }
-    console.log('data', data)
-  },
-  {
-    params: {
+// EC_SDK.OurProgram.ourProgramStore(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     params: {
 
-    }
-  }
-);
+//     }
+//   }
+// );
 
 /* Authentication (login) FUNCTION*/
 

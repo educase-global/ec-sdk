@@ -40,7 +40,7 @@ const EC_SDK = function (lib) {
     Daycare: lib.Daycare,
     Fee: lib.Fee,
     ProgressReport: lib.ProgressReport,
-    OUR_PROGRAM: lib.OUR_PROGRAM
+    OurProgram: lib.OurProgram
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
