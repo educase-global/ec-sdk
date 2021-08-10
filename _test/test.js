@@ -10,24 +10,38 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 )
 
+// Our program store function
+// EC_SDK.OurProgram.ourProgramStore(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     params: {
+
+//     }
+//   }
+// );
+
 /* Authentication (login) FUNCTION*/
 
-/* EC_SDK.Authentication.userLogin(
-  function(err, data){
-    if(err){
-      return console.log('something went wrong');
-    }
-    console.log('data', data)
-  },
-   {
-  params:{
-    username : "sanketschool@gmail.com",
-    password : "11223344",
-    unique_device_id : "web"
-  }
-}
-);    
- */
+// EC_SDK.Authentication.userLogin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     params: {
+//       username: "sanketschool@gmail.com",
+//       password: "11223344",
+//       unique_device_id: "web"
+//     }
+//   }
+// );
 
 /* EC_SDK.Authentication.guestLogin(
   function(err, data){
@@ -38,7 +52,7 @@ const EC_SDK = require("ec-sdk")(
   },
    {
   params:{
-    
+
   }
 }
 ); */
@@ -52,7 +66,7 @@ const EC_SDK = require("ec-sdk")(
   },
    {
   params:{
-    
+
   }
 }
 ); */
@@ -66,7 +80,7 @@ const EC_SDK = require("ec-sdk")(
   },
    {
   params:{
-    
+
   }
 }
 ); */
@@ -604,12 +618,12 @@ const EC_SDK = require("ec-sdk")(
    {
   auth : auth_bearer_token_admin,
   params:{
-    
+
   }
 }
 );  */
 
-/* 
+/*
 EC_SDK.MealCalendar.editMealCalendarAdmin(
   function(err, data){
     if(err){
@@ -620,7 +634,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
    {
   auth : auth_bearer_token_admin,
   params:{
-    
+
   }
 }
 );  */
@@ -635,7 +649,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
    {
   auth : auth_bearer_token_admin,
   params:{
-    
+
   }
 }
 );  */
@@ -684,7 +698,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
    {
   auth : auth_bearer_token_admin,
   params:{
-    
+
   }
 }
 );  */
@@ -702,7 +716,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
     id : "1"
   }
 }
-); 
+);
  */
 
 /* EC_SDK.VirtualMeet.updateVirtualMeetAdmin(
@@ -715,10 +729,10 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
    {
   auth : auth_bearer_token_admin,
   params:{
-    
+
   }
 }
-); 
+);
  */
 
 /* EC_SDK.VirtualMeet.deleteVirtualMeetAdmin(
@@ -746,7 +760,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
    {
   auth : auth_bearer_token_parent,
   params:{
-    
+
   }
 }
 );  */
@@ -765,7 +779,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
    {
   auth : auth_bearer_token_admin,
   params:{
-    
+
   }
 }
 ); */
@@ -780,7 +794,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
    {
   auth : auth_bearer_token_admin,
   params:{
-    
+
   }
 }
 ); */
@@ -795,7 +809,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
    {
   auth : auth_bearer_token_admin,
   params:{
-    
+
   }
 }
 ); */
@@ -810,7 +824,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
    {
   auth : auth_bearer_token_admin,
   params:{
-    
+
   }
 }
 ); */
@@ -825,7 +839,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
    {
   auth : auth_bearer_token_admin,
   params:{
-    
+
   }
 }
 ); */
@@ -855,7 +869,7 @@ EC_SDK.MealCalendar.editMealCalendarAdmin(
    {
   auth : auth_bearer_token_admin,
   params:{
-    
+
   }
 }
 ); */
