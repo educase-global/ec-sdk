@@ -2,13 +2,78 @@
 "use strict"
 
 const APP_CONFIG = require("./app_config.json")
-const auth_bearer_token_admin = "74913506d95f760dd54136e2ccac0792"
+const auth_bearer_token_admin = "728da7c9ae0acdb971579bb560a6e8d2"
 const auth_bearer_token_parent = "1869a90d096dfda42466e92b00bd9800"
 // Dependencies
 const EC_SDK = require("ec-sdk")(
   {}, // shared Library
   APP_CONFIG
 )
+
+// Our program table data function
+EC_SDK.OurProgram.ourProgramTableData(
+  function (err, data) {
+    if (err) {
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+  {
+    params: {
+      perPage : "10",
+      page : "0"
+    }
+  }
+);
+
+
+// Our program destroy function
+// EC_SDK.OurProgram.ourProgramDestroy(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     params: {
+
+//     }
+//   }
+// );
+
+
+// Our program update function
+// EC_SDK.OurProgram.ourProgramUpdate(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     params: {
+
+//     }
+//   }
+// );
+
+
+// Our program edit function
+// EC_SDK.OurProgram.ourProgramEdit(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     params: {
+//       id : "1"
+//     }
+//   }
+// );
+
 
 // Our program store function
 // EC_SDK.OurProgram.ourProgramStore(
