@@ -10,21 +10,65 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 )
 
+
+// Out seo store function
+// EC_SDK.Seo.seoStore(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     params: {}
+//   }
+// );
+
+
+// Out testmonial store function
+// EC_SDK.Testimonial.testmonialStore(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     params: {}
+//   }
+// );
+
+
+// Out aboutus section store function
+// EC_SDK.AboutusSection.aboutusSectionStore(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     params: {
+
+//     }
+//   }
+// );
+
 // Our program table data function
-EC_SDK.OurProgram.ourProgramTableData(
-  function (err, data) {
-    if (err) {
-      return console.log('something went wrong');
-    }
-    console.log('data', data)
-  },
-  {
-    params: {
-      perPage : "10",
-      page : "0"
-    }
-  }
-);
+// EC_SDK.OurProgram.ourProgramTableData(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     params: {
+//       perPage : "10",
+//       page : "0"
+//     }
+//   }
+// );
 
 
 // Our program destroy function
