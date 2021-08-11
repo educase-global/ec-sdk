@@ -12,17 +12,17 @@ const EC_SDK = require("ec-sdk")(
 
 
 // Out seo store function
-// EC_SDK.Seo.seoStore(
-//   function (err, data) {
-//     if (err) {
-//       return console.log('something went wrong');
-//     }
-//     console.log('data', data)
-//   },
-//   {
-//     params: {}
-//   }
-// );
+EC_SDK.Seo.seoStore(
+  function (err, data) {
+    if (err) {
+      return console.log('something went wrong');
+    }
+    console.log('data', data)
+  },
+  {
+    params: {}
+  }
+);
 
 
 // Out testmonial store function
