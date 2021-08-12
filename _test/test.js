@@ -10,6 +10,20 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 )
 
+// setting's account  function
+// EC_SDK.SettingAccount.getMyProfile(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     params: {}
+//   }
+// );
+
+
 // Student generate qr code admin function
 // EC_SDK.Student.studentGenerateQrCodeAdmin(
 //   function (err, data) {
@@ -22,7 +36,6 @@ const EC_SDK = require("ec-sdk")(
 //     params: {}
 //   }
 // );
-
 
 // Out seo store function
 // EC_SDK.Seo.seoStore(
