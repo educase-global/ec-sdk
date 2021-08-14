@@ -43,7 +43,8 @@ const EC_SDK = function (lib) {
     OurProgram: lib.OurProgram,
     AboutusSection: lib.AboutusSection,
     Testimonial: lib.Testimonial,
-    Seo: lib.Seo
+    Seo: lib.Seo,
+    SettingAccount: lib.SettingAccount
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
