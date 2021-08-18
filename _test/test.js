@@ -10,6 +10,22 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 )
 
+// page content api function
+// EC_SDK.PageContent.getHomeContent(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+
+//     }
+//   }
+// );
+
 // dropdown get fee fine type api function
 // EC_SDK.Dropdown.getFeeFineTypeDropdown(
 //   function (err, data) {
