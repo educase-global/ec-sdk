@@ -10,6 +10,55 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 )
 
+// Time Table Api function
+// EC_SDK.TimeTable.timeTableTableDataAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+
+//     }
+//   }
+// );
+
+// Year Management Api function
+// EC_SDK.YearManagement.academicYearShowAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+
+//     }
+//   }
+// );
+
+// SmsEmail api function
+// EC_SDK.SmsEmail.registrationStudentTableDataAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       perPage: 10,
+//       page: 0,
+//     }
+//   }
+// );
+
 // page content api function
 // EC_SDK.PageContent.getHomeContent(
 //   function (err, data) {
