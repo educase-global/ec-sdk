@@ -10,6 +10,22 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 )
 
+// fees module api testing function
+// EC_SDK.Fee.deleteStudentFeeDetailsAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       student_fee_id: 1
+//     }
+//   }
+// );
+
 // Time Table Api function
 // EC_SDK.TimeTable.timeTableTableDataAdmin(
 //   function (err, data) {
