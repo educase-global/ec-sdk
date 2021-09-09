@@ -2,13 +2,50 @@
 "use strict"
 
 const APP_CONFIG = require("./app_config.json")
-const auth_bearer_token_admin = "728da7c9ae0acdb971579bb560a6e8d2"
-const auth_bearer_token_parent = "1869a90d096dfda42466e92b00bd9800"
+const auth_bearer_token_admin = "ec104a5f341be2d4377f35b7df5cacf8"
+const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8"
 // Dependencies
 const EC_SDK = require("ec-sdk")(
   {}, // shared Library
   APP_CONFIG
 )
+
+// EC_SDK.Fee.removeStudentFeeAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       student_fee_id: JSON.stringify([4])
+//     }
+//   }
+// );
+
+// authentication module api testing function
+// EC_SDK.Authentication.admissionEnquiryParent(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       class_id: 1,
+//       source_id: 1,
+//       student_name: "fd",
+//       father_name: "fds",
+//       dob: "26-04-1992",
+//       gender: "boy",
+//       father_mobile: "7444411" 
+//     }
+//   }
+// );
 
 // fees module api testing function
 // EC_SDK.Fee.emailStudentFeeReceiptAdmin(
@@ -291,47 +328,53 @@ const EC_SDK = require("ec-sdk")(
 //   }
 // );
 
-/* EC_SDK.Authentication.guestLogin(
-  function(err, data){
-    if(err){
-      return console.log('something went wrong');
-    }
-    console.log('data', data)
-  },
-   {
-  params:{
+// EC_SDK.Authentication.guestLogin(
+//   function(err, data){
+//     if(err){
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//    {
+//   params:{
+    
+//   }
+// }
+// );
 
-  }
-}
-); */
+// EC_SDK.Authentication.addGuestUser(
+//   function(err, d4ata){
+//     if(err){
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//    {
+//   params:{
+//     unique_device_id: 'fd7da17cded7606e',
+//     school_id: 6,
+//     phone: '7874523676',
+//     authentication_key: 'd24f7f77c9bb591ac1d99f7ede655e9d',
+//   }
+// }
+// ); 
 
-/* EC_SDK.Authentication.addguestUser(
-  function(err, data){
-    if(err){
-      return console.log('something went wrong');
-    }
-    console.log('data', data)
-  },
-   {
-  params:{
-
-  }
-}
-); */
-
-/* EC_SDK.Authentication.verifyGuestOTP(
-  function(err, data){
-    if(err){
-      return console.log('something went wrong');
-    }
-    console.log('data', data)
-  },
-   {
-  params:{
-
-  }
-}
-); */
+// EC_SDK.Authentication.verifyGuestOtp(
+//   function(err, data){
+//     if(err){
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//    {
+//   params:{
+//     otp: '814356',
+//     phone: '7874523676',
+//     school_id: 6,
+//     authentication_key: 'd24f7f77c9bb591ac1d99f7ede655e9d',
+//   }
+// }
+// ); 
 
 /* ENQUIRY MODULE HELPER FUNCTIONS
 
