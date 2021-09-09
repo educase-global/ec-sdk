@@ -10,6 +10,58 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 )
 
+// EC_SDK.Fee.parentFeeListView(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+      
+//     }
+//   }
+// );
+
+// EC_SDK.Fee.removeStudentFeeAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       student_fee_id: JSON.stringify([4])
+//     }
+//   }
+// );
+
+// authentication module api testing function
+// EC_SDK.Authentication.admissionEnquiryParent(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       class_id: 1,
+//       source_id: 1,
+//       student_name: "fd",
+//       father_name: "fds",
+//       dob: "26-04-1992",
+//       gender: "boy",
+//       father_mobile: "7444411" 
+//     }
+//   }
+// );
+
 // fees module api testing function
 // EC_SDK.Fee.emailStudentFeeReceiptAdmin(
 //   function (err, data) {
