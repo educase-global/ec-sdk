@@ -10,6 +10,21 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 )
 
+// EC_SDK.Fee.parentFeeListView(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+      
+//     }
+//   }
+// );
+
 // EC_SDK.Fee.removeStudentFeeAdmin(
 //   function (err, data) {
 //     if (err) {
