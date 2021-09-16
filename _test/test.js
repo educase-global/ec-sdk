@@ -10,6 +10,228 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 )
 
+// SmsEmail api function
+// EC_SDK.SmsEmail.smsSettingShowAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+
+//     }
+//   }
+// );
+
+// SmsEmail api function
+// EC_SDK.SmsEmail.smsSettingStoreUpdateAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       sms_gateway_id: "2"
+//     }
+//   }
+// );
+
+// Public module api testing function
+// EC_SDK.Public.getAppDataAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     // auth: auth_bearer_token_admin,
+//     params: {
+//       appId: "https://demo.schoolbridge.in/",
+//     }
+//   }
+// );
+
+// Public module api testing function
+// EC_SDK.Public.getEnrollFormAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       appId: "4ede9289372b466b19809974938e78af",
+//       login_user_id: "1",
+//       classId: "1",
+//       enquiryType: "1",
+//       childName: "fdsfsd",
+//       fatherName: "hgf",
+//       fatherMobile: "7777770000",
+//       dob: "26-04-1992"
+//     }
+//   }
+// );
+
+// Public module api testing function
+// EC_SDK.Public.getEnrollFormAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       appId: "4ede9289372b466b19809974938e78af",
+//       login_user_id: "1",
+//       classId: "1",
+//       enquiryType: "1",
+//       childName: "fdsfsd",
+//       fatherName: "hgf",
+//       fatherMobile: "7777770000",
+//       dob: "26-04-1992"
+//     }
+//   }
+// );
+
+// Public module api testing function
+// EC_SDK.Public.getContactusFormAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       appId: "4ede9289372b466b19809974938e78af",
+//       name: "test",
+//       email: "sampro2692@gmail.com",
+//       subject: "ted",
+//       message: "fdsfsd"
+//     }
+//   }
+// );
+
+// Public module api testing function
+// EC_SDK.Public.getProgramsAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       appId: "4ede9289372b466b19809974938e78af",
+//       perPage: 10,
+//       page: 0
+//     }
+//   }
+// );
+
+// Public module api testing function
+// EC_SDK.Public.getSliderAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       appId: "4ede9289372b466b19809974938e78af",
+//       perPage: 10,
+//       page: 0
+//     }
+//   }
+// );
+
+// Public module api testing function
+// EC_SDK.Public.getTestimonialAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       appId: "4ede9289372b466b19809974938e78af",
+//       perPage: 10,
+//       page: 0
+//     }
+//   }
+// );
+
+// Public module api testing function
+// EC_SDK.Public.getAboutusSectionAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       appId: "4ede9289372b466b19809974938e78af",
+//       perPage: 10,
+//       page: 0
+//     }
+//   }
+// );
+
+// Public module api testing function
+// EC_SDK.Public.getAppAlbumsAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       appId: "4ede9289372b466b19809974938e78af",
+//       perPage: 10,
+//       page: 0
+//     }
+//   }
+// );
+
+// Public module api testing function
+// EC_SDK.Public.getAppNewsAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       appId: "4ede9289372b466b19809974938e78af",
+//       perPage: 10,
+//       page: 0
+//     }
+//   }
+// );
+
 // EC_SDK.Fee.parentFeeListView(
 //   function (err, data) {
 //     if (err) {

@@ -48,7 +48,8 @@ const EC_SDK = function (lib) {
     PageContent: lib.PageContent,
     SmsEmail: lib.SmsEmail,
     YearManagement: lib.YearManagement,
-    TimeTable: lib.TimeTable
+    TimeTable: lib.TimeTable,
+    Public: lib.Public
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
