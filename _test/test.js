@@ -10,6 +10,22 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 )
 
+// get Activity api function
+// EC_SDK.Dropdown.getActivity(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+
+//     }
+//   }
+// );
+
 // SmsEmail api function
 // EC_SDK.SmsEmail.smsSettingShowAdmin(
 //   function (err, data) {
