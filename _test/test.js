@@ -11,7 +11,7 @@ const EC_SDK = require("ec-sdk")(
 )
 
 // Test Report api function
-// EC_SDK.TestReport.testsShowAdmin(
+// EC_SDK.TestReport.testsEditAdmin(
 //   function (err, data) {
 //     if (err) {
 //       return console.log('something went wrong');
