@@ -10,7 +10,28 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 )
 
-// get Activity api function
+// Test Report api function
+// EC_SDK.TestReport.testsStoreAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       class_id: "1",
+//       section_id: "2",
+//       subject_id: "2",
+//       exam_date: "1626287400",
+//       exam_type: "Mid Exam",
+//       total_marks: "100"
+//     }
+//   }
+// );
+
+// // get Activity api function
 // EC_SDK.Dropdown.getActivity(
 //   function (err, data) {
 //     if (err) {
