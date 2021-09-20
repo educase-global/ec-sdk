@@ -11,6 +11,23 @@ const EC_SDK = require("ec-sdk")(
 )
 
 // Test Report api function
+// EC_SDK.TestReport.testsReportDataUpdateAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       test_id: "1",
+//       obtain_marks: JSON.stringify([{"student_id":"8","marks_obtained":"72"}])
+//     }
+//   }
+// );
+
+// Test Report api function
 // EC_SDK.TestReport.testsDestroyAdmin(
 //   function (err, data) {
 //     if (err) {
