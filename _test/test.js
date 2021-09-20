@@ -142,7 +142,7 @@ const EC_SDK = require("ec-sdk")(
 //   }
 // );
 
-// get Activity api function
+// // get Activity api function
 // EC_SDK.Dropdown.getActivity(
 //   function (err, data) {
 //     if (err) {
