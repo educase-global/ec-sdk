@@ -21,6 +21,27 @@ const EC_SDK = require("ec-sdk")(
 //   {
 //     auth: auth_bearer_token_admin,
 //     params: {
+//       perPage: "10",
+//       page: "0",
+//       class_id: "",
+//       section_id: "",
+//       subject_id: "",
+//       exam_type: ""
+//     }
+//   }
+// );
+
+// Test Report api function
+// EC_SDK.TestReport.testsDestroyAdmin(
+//   function (err, data) {
+//     if (err) {
+//       return console.log('something went wrong');
+//     }
+//     console.log('data', data)
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
 //       id: "5"
 //     }
 //   }
