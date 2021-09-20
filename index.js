@@ -50,7 +50,7 @@ const EC_SDK = function (lib) {
     YearManagement: lib.YearManagement,
     TimeTable: lib.TimeTable,
     TestReport: lib.TestReport,
-    Public: lib.Public,
+    Public: lib.Public
     
   }
 }
