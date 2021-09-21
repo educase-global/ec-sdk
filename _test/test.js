@@ -1,14 +1,33 @@
 // Info: Test Cases
-"use strict"
+"use strict";
 
-const APP_CONFIG = require("./app_config.json")
-const auth_bearer_token_admin = "ec104a5f341be2d4377f35b7df5cacf8"
-const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8"
+const APP_CONFIG = require("./app_config.json");
+const auth_bearer_token_admin = "ec104a5f341be2d4377f35b7df5cacf8";
+const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8";
 // Dependencies
 const EC_SDK = require("ec-sdk")(
-  {}, // shared Library
-  APP_CONFIG
-)
+	{}, // shared Library
+	APP_CONFIG
+);
+
+// SmsEmail api function
+EC_SDK.SmsEmail.registrationStudentUpdateAdmin(
+	function (err, data) {
+		if (err) {
+			return console.log("something went wrong");
+		}
+		console.log("data", data);
+	},
+	{
+		auth: auth_bearer_token_admin,
+		params: {
+			student_data: JSON.stringify([
+				{ student_id: 8, email: "Unsubscribe", sms: "Unsubscribe" },
+				{ student_id: 29, email: "Subscribe", sms: "Subscribe" },
+			]),
+		},
+	}
+);
 
 // Test Report api function
 // EC_SDK.TestReport.studentTestsTableDataAdmin(
@@ -492,7 +511,6 @@ const EC_SDK = require("ec-sdk")(
 //   }
 // );
 
-
 // EC_SDK.Fee.parentFeeListView(
 //   function (err, data) {
 //     if (err) {
@@ -503,7 +521,7 @@ const EC_SDK = require("ec-sdk")(
 //   {
 //     auth: auth_bearer_token_admin,
 //     params: {
-      
+
 //     }
 //   }
 // );
@@ -540,7 +558,7 @@ const EC_SDK = require("ec-sdk")(
 //       father_name: "fds",
 //       dob: "26-04-1992",
 //       gender: "boy",
-//       father_mobile: "7444411" 
+//       father_mobile: "7444411"
 //     }
 //   }
 // );
@@ -671,7 +689,6 @@ const EC_SDK = require("ec-sdk")(
 //   }
 // );
 
-
 // Student generate qr code admin function
 // EC_SDK.Student.studentGenerateQrCodeAdmin(
 //   function (err, data) {
@@ -698,7 +715,6 @@ const EC_SDK = require("ec-sdk")(
 //   }
 // );
 
-
 // Out testmonial store function
 // EC_SDK.Testimonial.testmonialStore(
 //   function (err, data) {
@@ -711,7 +727,6 @@ const EC_SDK = require("ec-sdk")(
 //     params: {}
 //   }
 // );
-
 
 // Out aboutus section store function
 // EC_SDK.AboutusSection.aboutusSectionStore(
@@ -744,7 +759,6 @@ const EC_SDK = require("ec-sdk")(
 //   }
 // );
 
-
 // Our program destroy function
 // EC_SDK.OurProgram.ourProgramDestroy(
 //   function (err, data) {
@@ -759,7 +773,6 @@ const EC_SDK = require("ec-sdk")(
 //     }
 //   }
 // );
-
 
 // Our program update function
 // EC_SDK.OurProgram.ourProgramUpdate(
@@ -776,7 +789,6 @@ const EC_SDK = require("ec-sdk")(
 //   }
 // );
 
-
 // Our program edit function
 // EC_SDK.OurProgram.ourProgramEdit(
 //   function (err, data) {
@@ -791,7 +803,6 @@ const EC_SDK = require("ec-sdk")(
 //     }
 //   }
 // );
-
 
 // Our program store function
 // EC_SDK.OurProgram.ourProgramStore(
@@ -835,7 +846,7 @@ const EC_SDK = require("ec-sdk")(
 //   },
 //    {
 //   params:{
-    
+
 //   }
 // }
 // );
@@ -855,7 +866,7 @@ const EC_SDK = require("ec-sdk")(
 //     authentication_key: 'd24f7f77c9bb591ac1d99f7ede655e9d',
 //   }
 // }
-// ); 
+// );
 
 // EC_SDK.Authentication.verifyGuestOtp(
 //   function(err, data){
@@ -872,7 +883,7 @@ const EC_SDK = require("ec-sdk")(
 //     authentication_key: 'd24f7f77c9bb591ac1d99f7ede655e9d',
 //   }
 // }
-// ); 
+// );
 
 /* ENQUIRY MODULE HELPER FUNCTIONS
 
