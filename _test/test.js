@@ -11,7 +11,7 @@ const EC_SDK = require("ec-sdk")(
 );
 
 // SmsEmail api function
-EC_SDK.SmsEmail.registrationStudentUpdateAdmin(
+EC_SDK.SmsEmail.getSmsPackageAdmin(
 	function (err, data) {
 		if (err) {
 			return console.log("something went wrong");
@@ -20,14 +20,28 @@ EC_SDK.SmsEmail.registrationStudentUpdateAdmin(
 	},
 	{
 		auth: auth_bearer_token_admin,
-		params: {
-			student_data: JSON.stringify([
-				{ student_id: 8, email: "Unsubscribe", sms: "Unsubscribe" },
-				{ student_id: 29, email: "Subscribe", sms: "Subscribe" },
-			]),
-		},
+		params: {},
 	}
 );
+
+// SmsEmail api function
+// EC_SDK.SmsEmail.registrationStudentUpdateAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			student_data: JSON.stringify([
+// 				{ student_id: 8, email: "Unsubscribe", sms: "Unsubscribe" },
+// 				{ student_id: 29, email: "Subscribe", sms: "Subscribe" },
+// 			]),
+// 		},
+// 	}
+// );
 
 // Test Report api function
 // EC_SDK.TestReport.studentTestsTableDataAdmin(
