@@ -10,24 +10,112 @@ const EC_SDK = require("ec-sdk")(
 	APP_CONFIG
 );
 
+// ProgressReport api function
+// EC_SDK.ProgressReport.updateResultSettingsAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			id: "1",
+// 			from_value: "1",
+// 			to_value: "4",
+// 			grade: "A",
+// 			remarks: "Test",
+// 		},
+// 	}
+// );
+
+// ProgressReport api function
+// EC_SDK.ProgressReport.editResultSettingsAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			id: "1",
+// 		},
+// 	}
+// );
+
+// ProgressReport api function
+// EC_SDK.ProgressReport.getResultSettingsListAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			perPage: "10",
+// 			page: "0",
+// 		},
+// 	}
+// );
+
+// // ProgressReport api function
+// EC_SDK.ProgressReport.deleteResultSettingsAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			id: "1",
+// 		},
+// 	}
+// );
+
+// ProgressReport api function
+// EC_SDK.ProgressReport.addResultSettingsAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// from_value: "1",
+// to_value: "4",
+// grade: "A",
+// remarks: "Test",
+// 		},
+// 	}
+// );
+
 // SmsEmail api function
-EC_SDK.SmsEmail.registrationStudentUpdateAdmin(
-	function (err, data) {
-		if (err) {
-			return console.log("something went wrong");
-		}
-		console.log("data", data);
-	},
-	{
-		auth: auth_bearer_token_admin,
-		params: {
-			student_data: JSON.stringify([
-				{ student_id: 8, email: "Unsubscribe", sms: "Unsubscribe" },
-				{ student_id: 29, email: "Subscribe", sms: "Subscribe" },
-			]),
-		},
-	}
-);
+// EC_SDK.SmsEmail.registrationStudentUpdateAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			student_data: JSON.stringify([
+// 				{ student_id: 8, email: "Unsubscribe", sms: "Unsubscribe" },
+// 				{ student_id: 29, email: "Subscribe", sms: "Subscribe" },
+// 			]),
+// 		},
+// 	}
+// );
 
 // Test Report api function
 // EC_SDK.TestReport.studentTestsTableDataAdmin(
