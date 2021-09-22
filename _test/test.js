@@ -10,8 +10,8 @@ const EC_SDK = require("ec-sdk")(
 	APP_CONFIG
 );
 
-// SmsEmail api function
-// EC_SDK.SmsEmail.smsPaymentSuccessAdmin(
+// ProgressReport api function
+// EC_SDK.ProgressReport.updateResultSettingsAdmin(
 // 	function (err, data) {
 // 		if (err) {
 // 			return console.log("something went wrong");
@@ -21,13 +21,17 @@ const EC_SDK = require("ec-sdk")(
 // 	{
 // 		auth: auth_bearer_token_admin,
 // 		params: {
-// 			order_id: "1",
+// 			id: "1",
+// 			from_value: "1",
+// 			to_value: "4",
+// 			grade: "A",
+// 			remarks: "Test",
 // 		},
 // 	}
 // );
 
-// SmsEmail api function
-// EC_SDK.SmsEmail.smsPaymentFailAdmin(
+// ProgressReport api function
+// EC_SDK.ProgressReport.editResultSettingsAdmin(
 // 	function (err, data) {
 // 		if (err) {
 // 			return console.log("something went wrong");
@@ -37,13 +41,13 @@ const EC_SDK = require("ec-sdk")(
 // 	{
 // 		auth: auth_bearer_token_admin,
 // 		params: {
-// 			order_id: "1",
+// 			id: "1",
 // 		},
 // 	}
 // );
 
-// SmsEmail api function
-// EC_SDK.SmsEmail.getSmsPackageAdmin(
+// ProgressReport api function
+// EC_SDK.ProgressReport.getResultSettingsListAdmin(
 // 	function (err, data) {
 // 		if (err) {
 // 			return console.log("something went wrong");
@@ -52,7 +56,45 @@ const EC_SDK = require("ec-sdk")(
 // 	},
 // 	{
 // 		auth: auth_bearer_token_admin,
-// 		params: {},
+// 		params: {
+// 			perPage: "10",
+// 			page: "0",
+// 		},
+// 	}
+// );
+
+// // ProgressReport api function
+// EC_SDK.ProgressReport.deleteResultSettingsAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			id: "1",
+// 		},
+// 	}
+// );
+
+// ProgressReport api function
+// EC_SDK.ProgressReport.addResultSettingsAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// from_value: "1",
+// to_value: "4",
+// grade: "A",
+// remarks: "Test",
+// 		},
 // 	}
 // );
 
