@@ -11,6 +11,20 @@ const EC_SDK = require("ec-sdk")(
 );
 
 // ProgressReport api function
+EC_SDK.ProgressReport.getProgressReportAdmin(
+	function (err, data) {
+		if (err) {
+			return console.log("something went wrong");
+		}
+		console.log("data", data);
+	},
+	{
+		auth: auth_bearer_token_admin,
+		params: {},
+	}
+);
+
+// ProgressReport api function
 // EC_SDK.ProgressReport.updateResultSettingsAdmin(
 // 	function (err, data) {
 // 		if (err) {
@@ -90,10 +104,10 @@ const EC_SDK = require("ec-sdk")(
 // 	{
 // 		auth: auth_bearer_token_admin,
 // 		params: {
-// from_value: "1",
-// to_value: "4",
-// grade: "A",
-// remarks: "Test",
+// 			from_value: "1",
+// 			to_value: "4",
+// 			grade: "A",
+// 			remarks: "Test",
 // 		},
 // 	}
 // );
