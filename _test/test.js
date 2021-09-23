@@ -11,18 +11,34 @@ const EC_SDK = require("ec-sdk")(
 );
 
 // SmsEmail api function
-EC_SDK.SmsEmail.smsTemplateDropdownAdmin(
-	function (err, data) {
-		if (err) {
-			return console.log("something went wrong");
-		}
-		console.log("data", data);
-	},
-	{
-		auth: auth_bearer_token_admin,
-		params: {},
-	}
-);
+// EC_SDK.SmsEmail.smsTemplateDataAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			id: "1",
+// 		},
+// 	}
+// );
+
+// SmsEmail api function
+// EC_SDK.SmsEmail.smsTemplateDropdownAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {},
+// 	}
+// );
 
 // SmsEmail api function
 // EC_SDK.SmsEmail.sendSmsEmailEnquiryAdmin(
