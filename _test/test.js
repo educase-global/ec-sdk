@@ -10,19 +10,65 @@ const EC_SDK = require("ec-sdk")(
 	APP_CONFIG
 );
 
+// SmsEmail api function
+// EC_SDK.SmsEmail.smsPaymentSuccessAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			order_id: "1",
+// 		},
+// 	}
+// );
+
+// SmsEmail api function
+// EC_SDK.SmsEmail.smsPaymentFailAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			order_id: "1",
+// 		},
+// 	}
+// );
+
+// SmsEmail api function
+// EC_SDK.SmsEmail.getSmsPackageAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {},
+// 	}
+// );
+
 // ProgressReport api function
-EC_SDK.ProgressReport.getProgressReportAdmin(
-	function (err, data) {
-		if (err) {
-			return console.log("something went wrong");
-		}
-		console.log("data", data);
-	},
-	{
-		auth: auth_bearer_token_admin,
-		params: {},
-	}
-);
+// EC_SDK.ProgressReport.getProgressReportDropdownAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {},
+// 	}
+// );
 
 // ProgressReport api function
 // EC_SDK.ProgressReport.updateResultSettingsAdmin(
