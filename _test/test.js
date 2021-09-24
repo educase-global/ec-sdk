@@ -11,6 +11,55 @@ const EC_SDK = require("ec-sdk")(
 );
 
 // SmsEmail api function
+// EC_SDK.SmsEmail.smsTemplateDataAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			id: "1",
+// 		},
+// 	}
+// );
+
+// SmsEmail api function
+// EC_SDK.SmsEmail.smsTemplateDropdownAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {},
+// 	}
+// );
+
+// SmsEmail api function
+// EC_SDK.SmsEmail.sendSmsEmailEnquiryAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			staff_id: JSON.stringify(["2"]),
+// 			sendType: "0",
+// 			templateId: "3",
+// 			inputField: JSON.stringify(["29-01-2021", "10:20 AM"]),
+// 		},
+// 	}
+// );
+
+// SmsEmail api function
 // EC_SDK.SmsEmail.smsPaymentSuccessAdmin(
 // 	function (err, data) {
 // 		if (err) {
