@@ -10,6 +10,24 @@ const EC_SDK = require("ec-sdk")(
 	APP_CONFIG
 );
 
+// Public module api testing function
+// EC_SDK.Public.getNewsDetailAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		// auth: auth_bearer_token_admin,
+// 		params: {
+// 			appId: "4ede9289372b466b19809974938e78af",
+// 			perPage: "10",
+// 			page: "1",
+// 		},
+// 	}
+// );
+
 // e-learning api function
 // EC_SDK.Elearning.updateResultFormatAdmin(
 // 	function (err, data) {
