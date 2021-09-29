@@ -11,18 +11,34 @@ const EC_SDK = require("ec-sdk")(
 );
 
 // e-learning api function
-EC_SDK.Elearning.getResultFormatAdmin(
-	function (err, data) {
-		if (err) {
-			return console.log("something went wrong");
-		}
-		console.log("data", data);
-	},
-	{
-		auth: auth_bearer_token_admin,
-		params: {},
-	}
-);
+// EC_SDK.Elearning.updateResultFormatAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			result_format: "1",
+// 		},
+// 	}
+// );
+
+// e-learning api function
+// EC_SDK.Elearning.getResultFormatAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {},
+// 	}
+// );
 
 // dropdown api function
 // EC_SDK.Dropdown.getTeacherSignatureDropdown(
