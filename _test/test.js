@@ -11,6 +11,23 @@ const EC_SDK = require("ec-sdk")(
 );
 
 // Public module api testing function
+// EC_SDK.Public.getEventDetailAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		// auth: auth_bearer_token_admin,
+// 		params: {
+// 			appId: "4ede9289372b466b19809974938e78af",
+// 			event_id: "20",
+// 		},
+// 	}
+// );
+
+// Public module api testing function
 // EC_SDK.Public.getEventAdmin(
 // 	function (err, data) {
 // 		if (err) {
