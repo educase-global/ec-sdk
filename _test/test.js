@@ -10,6 +10,22 @@ const EC_SDK = require("ec-sdk")(
 	APP_CONFIG
 );
 
+// e-learning api function
+// EC_SDK.Elearning.assessmentSubmitParent(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			answer: "1",
+// 		},
+// 	}
+// );
+
 // Public module api testing function
 // EC_SDK.Public.getEventDetailAdmin(
 // 	function (err, data) {
