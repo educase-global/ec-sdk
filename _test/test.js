@@ -236,7 +236,7 @@ const EC_SDK = require("ec-sdk")(
 // );
 
 // ProgressReport api function
-// EC_SDK.ProgressReport.getProgressReportDropdownAdmin(
+// EC_SDK.ProgressReport.getStudentReportDataAdmin(
 // 	function (err, data) {
 // 		if (err) {
 // 			return console.log("something went wrong");
@@ -245,9 +245,37 @@ const EC_SDK = require("ec-sdk")(
 // 	},
 // 	{
 // 		auth: auth_bearer_token_admin,
-// 		params: {},
+// 		params: {
+//       student_id: 29,
+//       report_id: 12
+//     },
 // 	}
 // );
+
+// EC_SDK.ProgressReport.updateStudentReportDataAdmin(
+// 	function(err, data) {
+// 		if (err) {
+// 			return console.log('something went wrong');
+// 		}
+// 		console.log('data', data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			student_id: 29,
+// 			report_id: 12,
+// 			report_data: JSON.stringify([
+// 				{ id: '3', report_value: '10' },
+// 				{ id: '4', report_value: '12' },
+// 				{ id: '5', report_value: '13' },
+// 				{ id: '6', report_value: '14' },
+// 				{ id: '7', report_value: '15' },
+// 				{ id: '8', report_value: '16' },
+// 				{ id: '9', report_value: 'Good' }
+// 			])
+// 		}
+// 	}
+// ); 
 
 // ProgressReport api function
 // EC_SDK.ProgressReport.updateResultSettingsAdmin(
