@@ -10,6 +10,177 @@ const EC_SDK = require("ec-sdk")(
 	APP_CONFIG
 );
 
+// Daycare api function
+// EC_SDK.Daycare.studentDaycareHistoryAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			perPage: "10",
+// 			page: "0",
+// 		},
+// 	}
+// );
+
+// sms-email api function
+// EC_SDK.SmsEmail.buySmsPackageAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			sms_gateway_id: "1",
+// 			sms_gateway_id: "1",
+// 		},
+// 	}
+// );
+
+// dropdown api function
+// EC_SDK.Dropdown.getMealMenuDropdown(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {},
+// 	}
+// );
+
+// Daycare api function
+// EC_SDK.Daycare.generateStudentBillPrintAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			id: "2",
+// 		},
+// 	}
+// );
+
+// Daycare api function
+// EC_SDK.Daycare.generateStudentBillTableAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			perPage: "10",
+// 			page: "0",
+// 		},
+// 	}
+// );
+
+// Daycare api function
+// EC_SDK.Daycare.getStudentBillDataAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			student_id: "8",
+// 		},
+// 	}
+// );
+
+// Daycare api function
+// EC_SDK.Daycare.generateStudentBillFormAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {},
+// 	}
+// );
+
+// Daycare api function
+// EC_SDK.Daycare.generateStudentBillAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {},
+// 	}
+// );
+
+// Daycare api function
+// EC_SDK.Daycare.daycareDropdownCategoryAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {},
+// 	}
+// );
+
+// Daycare api function
+// EC_SDK.Daycare.editDaycareCategoryAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			id: "2",
+// 		},
+// 	}
+// );
+
+// Daycare api function
+// EC_SDK.Daycare.viewDaycareCategoryAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			id: "1",
+// 		},
+// 	}
+// );
+
 // e-learning api function
 // EC_SDK.Elearning.assessmentSubmitParent(
 // 	function (err, data) {
