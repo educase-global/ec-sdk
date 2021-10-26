@@ -11,6 +11,23 @@ const EC_SDK = require("ec-sdk")(
 );
 
 // Daycare api function
+// EC_SDK.Daycare.daycareTimingUpdateAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			start_time: "08:00:00",
+// 			end_time: "15:00:00",
+// 		},
+// 	}
+// );
+
+// Daycare api function
 // EC_SDK.Daycare.deleteStudentBillAdmin(
 // 	function (err, data) {
 // 		if (err) {
