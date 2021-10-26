@@ -10,6 +10,23 @@ const EC_SDK = require("ec-sdk")(
 	APP_CONFIG
 );
 
+// Meal Calender api function
+// EC_SDK.MealCalendar.updateHideMealAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			meal_calendar_id: "1",
+// 			hide_meal_arr: JSON.stringify([1, 2]),
+// 		},
+// 	}
+// );
+
 // Daycare api function
 // EC_SDK.Daycare.daycareTimingEditAdmin(
 // 	function (err, data) {
