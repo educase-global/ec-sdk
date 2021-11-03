@@ -10,6 +10,20 @@ const EC_SDK = require("ec-sdk")(
 	APP_CONFIG
 );
 
+// dropdown api function
+// EC_SDK.Dropdown.getAllStudentDropdown(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {},
+// 	}
+// );
+
 // Meal Calender api function
 // EC_SDK.MealCalendar.updateHideMealAdmin(
 // 	function (err, data) {
