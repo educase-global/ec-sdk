@@ -1,20 +1,20 @@
 {
-  "name": "educase-sdk",
-  "description": "Educase SDK",
-  "version": "1.0.0",
-  "main": "index.js",
-  "keywords": [],
-  "private": true,
-  "license": "Private",
-  "author": {
-    "name": "Brijesh Singh",
-    "email": "brijeshsinghcs0013@gmail.com"
-  },
-  "contributors": [],
-  "bundleDependencies": false,
-  "dependencies": {
-    "axios": "0.21.1",
-    "form-data": "^4.0.0",
-    "moment": "^2.29.1"
-  }
+	"name": "ec-sdk",
+	"description": "Educase SDK",
+	"version": "1.0.0",
+	"main": "index.js",
+	"keywords": [],
+	"private": true,
+	"license": "Private",
+	"author": {
+		"name": "Brijesh Singh",
+		"email": "brijeshsinghcs0013@gmail.com"
+	},
+	"contributors": [],
+	"bundleDependencies": false,
+	"dependencies": {
+		"axios": "0.21.1",
+		"form-data": "^4.0.0",
+		"moment": "^2.29.1"
+	}
 }
