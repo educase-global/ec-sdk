@@ -2,7 +2,7 @@
 "use strict";
 
 const APP_CONFIG = require("./app_config.json");
-const auth_bearer_token_admin = "2f7ee55980d2f3665bcfcc1e2b97a086";
+const auth_bearer_token_admin = "fd4684e21105ea31217ba0dda3ac61e5";
 const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8";
 // Dependencies
 const EC_SDK = require("ec-sdk")(
@@ -11,7 +11,40 @@ const EC_SDK = require("ec-sdk")(
 );
 
 // Test Report api function
-EC_SDK.TestReport.examTypeEditAdmin(
+// EC_SDK.TestReport.examTypeTableDataAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			perPage: "10",
+// 			page: "0",
+// 		},
+// 	}
+// );
+
+// Test Report api function
+// EC_SDK.TestReport.deleteExamTypeAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			id: 3,
+// 		},
+// 	}
+// );
+
+// Test Report api function
+EC_SDK.TestReport.updateExamTypeAdmin(
 	function (err, data) {
 		if (err) {
 			return console.log("something went wrong");
@@ -21,10 +54,27 @@ EC_SDK.TestReport.examTypeEditAdmin(
 	{
 		auth: auth_bearer_token_admin,
 		params: {
+			name: "Test1",
 			id: 1,
 		},
 	}
 );
+
+// Test Report api function
+// EC_SDK.TestReport.examTypeEditAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			id: 1,
+// 		},
+// 	}
+// );
 
 // Test Report api function
 // EC_SDK.TestReport.examTypeStoreAdmin(
@@ -657,19 +707,19 @@ EC_SDK.TestReport.examTypeEditAdmin(
 
 // Test Report api function
 // EC_SDK.TestReport.testsReportDataUpdateAdmin(
-//   function (err, data) {
-//     if (err) {
-//       return console.log('something went wrong');
-//     }
-//     console.log('data', data)
-//   },
-//   {
-//     auth: auth_bearer_token_admin,
-//     params: {
-//       test_id: "1",
-//       obtain_marks: JSON.stringify([{"student_id":"8","marks_obtained":"72"}])
-//     }
-//   }
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			test_id: 1,
+// 			obtain_marks: JSON.stringify([{ student_id: "8", marks_obtained: "72" }]),
+// 		},
+// 	}
 // );
 
 // Test Report api function
