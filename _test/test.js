@@ -11,6 +11,20 @@ const EC_SDK = require("ec-sdk")(
 );
 
 // Test Report api function
+EC_SDK.TestReport.examTypeDropdownAdmin(
+	function (err, data) {
+		if (err) {
+			return console.log("something went wrong");
+		}
+		console.log("data", data);
+	},
+	{
+		auth: auth_bearer_token_admin,
+		params: {},
+	}
+);
+
+// Test Report api function
 // EC_SDK.TestReport.examTypeTableDataAdmin(
 // 	function (err, data) {
 // 		if (err) {
