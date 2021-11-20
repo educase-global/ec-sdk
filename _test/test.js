@@ -2,7 +2,7 @@
 "use strict";
 
 const APP_CONFIG = require("./app_config.json");
-const auth_bearer_token_admin = "b381a0f6cc8f991d2fcedfe042395f09";
+const auth_bearer_token_admin = "b438da05b457dfb552eefb437e7f5d67";
 const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8";
 // Dependencies
 const EC_SDK = require("ec-sdk")(
@@ -52,7 +52,7 @@ const EC_SDK = require("ec-sdk")(
 // 	{
 // 		auth: auth_bearer_token_admin,
 // 		params: {
-// 			id: 3,
+// 			id: "3",
 // 		},
 // 	}
 // );
