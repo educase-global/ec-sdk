@@ -2,7 +2,7 @@
 "use strict";
 
 const APP_CONFIG = require("./app_config.json");
-const auth_bearer_token_admin = "fd4684e21105ea31217ba0dda3ac61e5";
+const auth_bearer_token_admin = "b381a0f6cc8f991d2fcedfe042395f09";
 const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8";
 // Dependencies
 const EC_SDK = require("ec-sdk")(
@@ -58,21 +58,21 @@ const EC_SDK = require("ec-sdk")(
 // );
 
 // Test Report api function
-EC_SDK.TestReport.updateExamTypeAdmin(
-	function (err, data) {
-		if (err) {
-			return console.log("something went wrong");
-		}
-		console.log("data", data);
-	},
-	{
-		auth: auth_bearer_token_admin,
-		params: {
-			name: "Test1",
-			id: 1,
-		},
-	}
-);
+// EC_SDK.TestReport.updateExamTypeAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {
+// 			name: "Test1",
+// 			id: 1,
+// 		},
+// 	}
+// );
 
 // Test Report api function
 // EC_SDK.TestReport.examTypeEditAdmin(
