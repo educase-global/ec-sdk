@@ -11,6 +11,22 @@ const EC_SDK = require("ec-sdk")(
 );
 
 // Test Report api function
+EC_SDK.TestReport.examTypeEditAdmin(
+	function (err, data) {
+		if (err) {
+			return console.log("something went wrong");
+		}
+		console.log("data", data);
+	},
+	{
+		auth: auth_bearer_token_admin,
+		params: {
+			id: 1,
+		},
+	}
+);
+
+// Test Report api function
 // EC_SDK.TestReport.examTypeStoreAdmin(
 // 	function (err, data) {
 // 		if (err) {
