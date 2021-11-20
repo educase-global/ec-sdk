@@ -2,13 +2,27 @@
 "use strict";
 
 const APP_CONFIG = require("./app_config.json");
-const auth_bearer_token_admin = "ec104a5f341be2d4377f35b7df5cacf8";
+const auth_bearer_token_admin = "2f7ee55980d2f3665bcfcc1e2b97a086";
 const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8";
 // Dependencies
 const EC_SDK = require("ec-sdk")(
 	{}, // shared Library
 	APP_CONFIG
 );
+
+// Test Report api function
+// EC_SDK.TestReport.examTypeStoreAdmin(
+// 	function (err, data) {
+// 		if (err) {
+// 			return console.log("something went wrong");
+// 		}
+// 		console.log("data", data);
+// 	},
+// 	{
+// 		auth: auth_bearer_token_admin,
+// 		params: {},
+// 	}
+// );
 
 // dropdown api function
 // EC_SDK.Dropdown.getAllStudentDropdown(
