@@ -6,8 +6,22 @@ const auth_bearer_token_admin = "b438da05b457dfb552eefb437e7f5d67";
 const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8";
 // Dependencies
 const EC_SDK = require("ec-sdk")(
-	{}, // shared Library
-	APP_CONFIG
+  {}, // shared Library
+  APP_CONFIG
+);
+
+// profile change request
+EC_SDK.ProfileChangeRequest.profileChangeRequestTableData(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong");
+    }
+    console.log("data", data);
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {},
+  }
 );
 
 // Test Report api function
