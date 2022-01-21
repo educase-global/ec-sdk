@@ -10,19 +10,19 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 );
 
-// profile change request
-EC_SDK.ProfileChangeRequest.profileChangeRequestTableData(
-  function (err, data) {
-    if (err) {
-      return console.log("something went wrong");
-    }
-    console.log("data", data);
-  },
-  {
-    auth: auth_bearer_token_admin,
-    params: {},
-  }
-);
+// Dashboard api
+// EC_SDK.Dashboard.getDashboardData(
+//   function (err, data) {
+//     if (err) {
+//       return console.log("something went wrong");
+//     }
+//     console.log("data", data);
+//   },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {},
+//   }
+// );
 
 // Test Report api function
 // EC_SDK.TestReport.examTypeDropdownAdmin(
