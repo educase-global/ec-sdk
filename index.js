@@ -51,7 +51,8 @@ const EC_SDK = function (lib) {
     TimeTable: lib.TimeTable,
     Public: lib.Public,
     TestReport: lib.TestReport,
-    ProfileChangeRequest: lib.ProfileChangeRequest
+    ProfileChangeRequest: lib.ProfileChangeRequest,
+    Dashboard: lib.Dashboard
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
