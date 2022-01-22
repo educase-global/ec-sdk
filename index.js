@@ -52,7 +52,9 @@ const EC_SDK = function (lib) {
     Public: lib.Public,
     TestReport: lib.TestReport,
     ProfileChangeRequest: lib.ProfileChangeRequest,
-    Dashboard: lib.Dashboard
+    Dashboard: lib.Dashboard,
+    Offer: lib.Offer,
+    WebsiteSetting: lib.WebsiteSetting
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////

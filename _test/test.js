@@ -2,7 +2,7 @@
 "use strict";
 
 const APP_CONFIG = require("./app_config.json");
-const auth_bearer_token_admin = "b438da05b457dfb552eefb437e7f5d67";
+const auth_bearer_token_admin = "16ae58916e4ac87357c870bb46500113";
 const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8";
 // Dependencies
 const EC_SDK = require("ec-sdk")(
@@ -10,8 +10,8 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 );
 
-// Dashboard api
-// EC_SDK.Dashboard.getDashboardData(
+
+// EC_SDK.WebsiteSetting.websiteSettingShow(
 //   function (err, data) {
 //     if (err) {
 //       return console.log("something went wrong");
