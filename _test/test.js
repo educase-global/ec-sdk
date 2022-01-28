@@ -2,7 +2,7 @@
 "use strict";
 
 const APP_CONFIG = require("./app_config.json");
-const auth_bearer_token_admin = "16ae58916e4ac87357c870bb46500113";
+const auth_bearer_token_admin = "6c7ba6d445050459cf0f744f26c71d72";
 const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8";
 // Dependencies
 const EC_SDK = require("ec-sdk")(
@@ -11,18 +11,18 @@ const EC_SDK = require("ec-sdk")(
 );
 
 
-// EC_SDK.WebsiteSetting.websiteSettingShow(
-//   function (err, data) {
-//     if (err) {
-//       return console.log("something went wrong");
-//     }
-//     console.log("data", data);
-//   },
-//   {
-//     auth: auth_bearer_token_admin,
-//     params: {},
-//   }
-// );
+EC_SDK.Dashboard.getDashboardData(
+  function (err, data) {
+    if (err) {
+      return console.log("something went wrong");
+    }
+    console.log("data", data);
+  },
+  {
+    auth: auth_bearer_token_admin,
+    params: {},
+  }
+);
 
 // Test Report api function
 // EC_SDK.TestReport.examTypeDropdownAdmin(
