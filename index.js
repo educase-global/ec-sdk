@@ -54,7 +54,8 @@ const EC_SDK = function (lib) {
     ProfileChangeRequest: lib.ProfileChangeRequest,
     Dashboard: lib.Dashboard,
     Offer: lib.Offer,
-    WebsiteSetting: lib.WebsiteSetting
+    WebsiteSetting: lib.WebsiteSetting,
+    MobileSlider: lib.MobileSlider,
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
