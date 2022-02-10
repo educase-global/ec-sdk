@@ -1,15 +1,15 @@
 {
 
-  "API_URL_DEFAULT_SB"                  : "https://apiv2.schoolbridge.in/api/v2",
-  "API_URL_DEFAULT_PROD"                : "https://apiv2.schoolbridge.in/api/v2",
+  "API_URL_DEFAULT_SB"                  : "https://v2dev.schoolbridge.in/api/v2",
+  "API_URL_DEFAULT_PROD"                : "https://v2dev.schoolbridge.in/api/v2",
 
-  "API_URL_SB"                          : "https://apiv2.schoolbridge.in/api/v2",
-  "API_URL_PROD"                        : "https://apiv2.schoolbridge.in/api/v2",
+  "API_URL_SB"                          : "https://v2dev.schoolbridge.in/api/v2",
+  "API_URL_PROD"                        : "https://v2dev.schoolbridge.in/api/v2",
 
   "API_PROD"                            : true,
 
-  "MEDIA_URL_SB"                        : "https://apiv2.schoolbridge.in/api/v2",
-  "MEDIA_URL_PROD"                      : "https://apiv2.schoolbridge.in/api/v2",
+  "MEDIA_URL_SB"                        : "https://v2dev.schoolbridge.in/api/v2",
+  "MEDIA_URL_PROD"                      : "https://v2dev.schoolbridge.in/api/v2",
 
   "NO_CASUAL_LOGGING"                   : false,
   "NO_ERROR_LOGGING"                    : false,
