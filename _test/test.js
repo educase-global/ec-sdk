@@ -10,6 +10,7 @@ const EC_SDK = require("ec-sdk")(
   APP_CONFIG
 );
 
+// console.log(EC_SDK.Utils.tableIsSearchable("azf"))
 
 // EC_SDK.MobileSlider.mobileSliderList((err, response) => {
 //   if (err) {
