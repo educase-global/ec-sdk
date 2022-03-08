@@ -2,7 +2,7 @@
 "use strict";
 
 const APP_CONFIG = require("./app_config.json");
-const auth_bearer_token_admin = "66fdec729c3dc0bc516b6c00b81234d6";
+const auth_bearer_token_admin = "43ddf8acc33c567fe7fa21831a508627";
 const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8";
 // Dependencies
 const EC_SDK = require("ec-sdk")(
@@ -12,7 +12,7 @@ const EC_SDK = require("ec-sdk")(
 
 // console.log(EC_SDK.Utils.tableIsSearchable("azf"))
 
-// EC_SDK.MobileSlider.mobileSliderList((err, response) => {
+// EC_SDK.Cctv.getCctvAssignTableDataAdmin((err, response) => {
 //   if (err) {
 //     return console.log("something went wrong");
 //   } else {
