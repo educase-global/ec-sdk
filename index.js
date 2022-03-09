@@ -57,6 +57,7 @@ const EC_SDK = function (lib) {
     WebsiteSetting: lib.WebsiteSetting,
     MobileSlider: lib.MobileSlider,
     Cctv: lib.Cctv,
+    Franchise: lib.Franchise,
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
