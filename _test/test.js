@@ -12,21 +12,21 @@ const EC_SDK = require("ec-sdk")(
 
 // console.log(EC_SDK.Utils.tableIsSearchable("azf"))
 
-// EC_SDK.Cctv.getCctvAssignTableDataAdmin((err, response) => {
-//   if (err) {
-//     return console.log("something went wrong");
-//   } else {
-//     console.log("data", response);
-//   }
-// },
-//   {
-//     auth: auth_bearer_token_admin,
-//     params: {
-//       perPage: "10",
-//       page: "0"
-//     }
-//   }
-// );
+EC_SDK.Franchise.franchiseSchoolTableData((err, response) => {
+  if (err) {
+    return console.log("something went wrong");
+  } else {
+    console.log("data", response);
+  }
+},
+  {
+    auth: auth_bearer_token_admin,
+    params: {
+      perPage: "10",
+      page: "0"
+    }
+  }
+);
 
 // Test Report api function
 // EC_SDK.TestReport.examTypeTableDataAdmin(
