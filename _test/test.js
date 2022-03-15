@@ -4,6 +4,7 @@
 const APP_CONFIG = require("./app_config.json");
 const auth_bearer_token_admin = "43ddf8acc33c567fe7fa21831a508627";
 const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8";
+const auth_bearer_token_franchise = "50485a85fc25d95a074b127f7f35507b";
 // Dependencies
 const EC_SDK = require("ec-sdk")(
   {}, // shared Library
@@ -12,7 +13,7 @@ const EC_SDK = require("ec-sdk")(
 
 // console.log(EC_SDK.Utils.tableIsSearchable("azf"))
 
-EC_SDK.Franchise.franchiseSchoolTableData((err, response) => {
+EC_SDK.OnBoarding.onBoardingSetupSchool((err, response) => {
   if (err) {
     return console.log("something went wrong");
   } else {
@@ -20,13 +21,39 @@ EC_SDK.Franchise.franchiseSchoolTableData((err, response) => {
   }
 },
   {
-    auth: auth_bearer_token_admin,
+    auth: auth_bearer_token_franchise,
     params: {
-      perPage: "10",
-      page: "0"
+      name:"CosmiKids Preschool & Daycare",
+      email:"belakotwani@gmail.com",
+      phone:"9920048747",
+      total_student:"900",
+      poc_name:"Admin",
+      poc_mobile:"9920048747",
+      head_office_address:"Jodhpur",
+      country:"India",
+      states:"RAJASTHAN",
+      city:"Jodhpur",
+      pincode:"711403",
+      time_zone:"Asia/Kolkata",
+      franchiser_id:"1"
     }
   }
 );
+// EC_SDK.Franchise.franchiseSchoolTableData((err, response) => {
+//   if (err) {
+//     return console.log("something went wrong");
+//   } else {
+//     console.log("data", response);
+//   }
+// },
+//   {
+//     auth: auth_bearer_token_admin,
+//     params: {
+//       perPage: "10",
+//       page: "0"
+//     }
+//   }
+// );
 
 // Test Report api function
 // EC_SDK.TestReport.examTypeTableDataAdmin(

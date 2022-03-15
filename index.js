@@ -58,6 +58,7 @@ const EC_SDK = function (lib) {
     MobileSlider: lib.MobileSlider,
     Cctv: lib.Cctv,
     Franchise: lib.Franchise,
+    OnBoarding: lib.OnBoarding,
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
