@@ -59,6 +59,7 @@ const EC_SDK = function (lib) {
     Cctv: lib.Cctv,
     Franchise: lib.Franchise,
     OnBoarding: lib.OnBoarding,
+    VisitorRegister: lib.VisitorRegister,
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
