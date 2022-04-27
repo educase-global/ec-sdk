@@ -61,6 +61,7 @@ const EC_SDK = function (lib) {
     OnBoarding: lib.OnBoarding,
     VisitorRegister: lib.VisitorRegister,
     KitOrdering: lib.KitOrdering,
+    Payment: lib.Payment,
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
