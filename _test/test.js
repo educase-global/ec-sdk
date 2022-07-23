@@ -2,7 +2,7 @@
 "use strict";
 
 const APP_CONFIG = require("./app_config.json");
-const auth_bearer_token_admin = "4192097b48d95c265ca8ba2d1438e31d";
+const auth_bearer_token_admin = "5bf90963b78a7092df9aea494d652913";
 const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8";
 const auth_bearer_token_franchise = "50485a85fc25d95a074b127f7f35507b";
 // Dependencies
@@ -13,7 +13,7 @@ const EC_SDK = require("ec-sdk")(
 
 // console.log(EC_SDK.Utils.tableIsSearchable("azf"))
 
-EC_SDK.Payment.processFeePayment((err, response) => {
+EC_SDK.MeetingRoom.meetingRoomTableDataAdmin((err, response) => {
   if (err) {
     return console.log("something went wrong");
   } else {
