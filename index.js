@@ -63,7 +63,8 @@ const EC_SDK = function (lib) {
     KitOrdering: lib.KitOrdering,
     Payment: lib.Payment,
     Curriculum: lib.Curriculum,
-    MeetingRoom: lib.MeetingRoom
+    MeetingRoom: lib.MeetingRoom,
+    TransferCertificate: lib.TransferCertificate
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
