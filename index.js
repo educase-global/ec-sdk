@@ -67,7 +67,8 @@ const EC_SDK = function (lib) {
     TransferCertificate: lib.TransferCertificate,
     OurCenters: lib.OurCenters,
     Bustracking: lib.Bustracking,
-    SchoolWebsite: lib.SchoolWebsite
+    SchoolWebsite: lib.SchoolWebsite,
+    Stats:lib.Stats
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
