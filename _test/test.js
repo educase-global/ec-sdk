@@ -2,7 +2,7 @@
 "use strict";
 
 const APP_CONFIG = require("./app_config.json");
-const auth_bearer_token_admin = "dc25afe640ba73c0a31bd7eef1a342b8";
+const auth_bearer_token_admin = "41f233ace5efe64f96d20fa1d9c1505d";
 const auth_bearer_token_parent = "ec104a5f341be2d4377f35b7df5cacf8";
 const auth_bearer_token_franchise = "50485a85fc25d95a074b127f7f35507b";
 // Dependencies
@@ -13,20 +13,20 @@ const EC_SDK = require("ec-sdk")(
 
 // console.log(EC_SDK.Utils.tableIsSearchable("azf"))
 
-// EC_SDK.WebsitePages.websitePageEdit((err, response) => {
-//   if (err) {
-//     return console.log("something went wrong");
-//   } else {
-//     console.log("data", response);
-//   }
-// },
-//   {
-//     auth: auth_bearer_token_admin,
-//     params: {
-//       id: "1"
-//     }
-//   }
-// );
+EC_SDK.Certificate.certificateSettingShowAdmin((err, response) => {
+  if (err) {
+    return console.log("something went wrong");
+  } else {
+    console.log("data", response);
+  }
+},
+  {
+    auth: auth_bearer_token_admin,
+    params: {
+      id: "1"
+    }
+  }
+);
 // EC_SDK.Franchise.franchiseSchoolTableData((err, response) => {
 //   if (err) {
 //     return console.log("something went wrong");
