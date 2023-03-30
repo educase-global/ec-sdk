@@ -71,7 +71,8 @@ const EC_SDK = function (lib) {
     Stats: lib.Stats,
     Superadmin: lib.Superadmin,
     WebsitePages: lib.WebsitePages,
-    Certificate: lib.Certificate
+    Certificate: lib.Certificate,
+    Communication: lib.Communication
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
