@@ -73,7 +73,8 @@ const EC_SDK = function (lib) {
     WebsitePages: lib.WebsitePages,
     Certificate: lib.Certificate,
     Communication: lib.Communication,
-    GuestFeePayment: lib.GuestFeePayment
+    GuestFeePayment: lib.GuestFeePayment,
+    Notification: lib.Notification
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
