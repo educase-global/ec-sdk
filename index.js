@@ -74,7 +74,8 @@ const EC_SDK = function (lib) {
     Certificate: lib.Certificate,
     Communication: lib.Communication,
     GuestFeePayment: lib.GuestFeePayment,
-    Notification: lib.Notification
+    Notification: lib.Notification,
+    ActivityCenter: lib.ActivityCenter
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
