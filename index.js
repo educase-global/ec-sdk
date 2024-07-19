@@ -2,6 +2,7 @@
 "use-strict"
 
 const enquiry = require("./lib/core_modules/enquiry")
+const examManagement = require("./lib/core_modules/exam-management")
 
 ///////////////////////////// Module Exports START /////////////////////////////
 module.exports = function (shared_libs, config) {
@@ -77,7 +78,8 @@ const EC_SDK = function (lib) {
     GuestFeePayment: lib.GuestFeePayment,
     Notification: lib.Notification,
     ActivityCenter: lib.ActivityCenter,
-    SocialMedia: lib.SocialMedia
+    SocialMedia: lib.SocialMedia,
+    ExamManagement: lib.ExamManagement
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
