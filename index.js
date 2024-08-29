@@ -79,7 +79,8 @@ const EC_SDK = function (lib) {
     Notification: lib.Notification,
     ActivityCenter: lib.ActivityCenter,
     SocialMedia: lib.SocialMedia,
-    ExamManagement: lib.ExamManagement
+    ExamManagement: lib.ExamManagement,
+    GatePass: lib.GatePass
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
