@@ -80,7 +80,8 @@ const EC_SDK = function (lib) {
     ActivityCenter: lib.ActivityCenter,
     SocialMedia: lib.SocialMedia,
     ExamManagement: lib.ExamManagement,
-    GatePass: lib.GatePass
+    GatePass: lib.GatePass,
+    Billing: lib.Billing
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
