@@ -59,6 +59,7 @@ const EC_SDK = function (lib) {
     WebsiteSetting: lib.WebsiteSetting,
     MobileSlider: lib.MobileSlider,
     Cctv: lib.Cctv,
+    StudentTransfer: lib.StudentTransfer,
     Franchise: lib.Franchise,
     OnBoarding: lib.OnBoarding,
     VisitorRegister: lib.VisitorRegister,
