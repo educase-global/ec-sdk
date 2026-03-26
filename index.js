@@ -84,6 +84,7 @@ const EC_SDK = function (lib) {
     ExamManagement: lib.ExamManagement,
     GatePass: lib.GatePass,
     Billing: lib.Billing,
+    Broadcast: lib.Broadcast,
     ReportCenter: lib.ReportCenter
   }
 }
