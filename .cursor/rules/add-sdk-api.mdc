@@ -1,0 +1,99 @@
+---
+description: Pattern for adding a new API endpoint to ec-sdk and wiring it into ec-mobileapp
+alwaysApply: true
+---
+
+# Adding a New API to ec-sdk
+
+When adding a new API endpoint, update **all four locations** in order.
+
+## 1. ec-sdk — Route config (`lib/core/loader.js`)
+
+Add the URN constant inside the relevant `config_<module>` block:
+
+```js
+const config_broadcast = {
+    // ... existing keys ...
+    API_URN_BROADCAST_MARK_AS_READ: "broadcast/mark-as-read",
+};
+```
+
+- Key format: `API_URN_<MODULE>_<ACTION>` (UPPER_SNAKE_CASE).
+- Value: the endpoint path exactly as Postman shows it (no leading `/`).
+
+## 2. ec-sdk — Module method (`lib/core_modules/<module>/index.js`)
+
+Add a function to the module's exported object:
+
+```js
+instaAlertUpdateIsPinned: function (cb, args) {
+    let params = args["params"];
+
+    Lib.Commons.httpHandler(
+        function (err, http_status, http_headers, data) {
+            if (err) {
+                return cb(err);
+            }
+
+            cb(false, data);
+        },
+        CONFIG["API_URN_INSTA_ALERT_UPDATE_IS_PINNED"],
+        "put",       // match the HTTP method from Postman
+        params,
+        args["auth"]
+    );
+},
+```
+
+- Function name: camelCase, matching the action.
+- Method string: `"get"`, `"post"`, or `"put"` — must match the Postman spec.
+- Config key: must reference the URN added in step 1.
+
+## 3. ec-sdk — Root facade (`index.js`)
+
+Ensure the module is exported in the `EC_SDK` function. If the module (e.g. `Broadcast`, `Insta`) is **not already listed**, add it:
+
+```js
+Broadcast: lib.Broadcast,
+```
+
+Skip this step if the module is already exported.
+
+## 4. ec-mobileapp — ApiManager (`src/Manager/ApiManager.js`)
+
+Add a `Services` wrapper that calls the SDK function:
+
+```js
+instaAlertUpdateIsPinned: (params) => {
+    return new Promise(function (resolve, reject) {
+        EC_SDK.Insta.instaAlertUpdateIsPinned(
+            function (err, data) {
+                if (err) {
+                    reject(data);
+                } else {
+                    if (data.status === "success" || data.status === "Success") {
+                        resolve(data);
+                    } else {
+                        reject(data.message);
+                    }
+                }
+            },
+            {
+                auth: authToken,
+                params: params,
+            }
+        );
+    });
+},
+```
+
+- Place the wrapper near the other methods of the same module.
+- Use `EC_SDK.<Module>.<methodName>` matching the SDK function.
+
+## 5. ec-mobileapp — node_modules copy
+
+Mirror steps 1 and 2 inside `ec-mobileapp/node_modules/ec-sdk/` so the installed package matches until it is republished:
+
+- `node_modules/ec-sdk/lib/core/loader.js` — add URN.
+- `node_modules/ec-sdk/lib/core_modules/<module>/index.js` — add function.
+- `node_modules/ec-sdk/index.js` — add module export if missing.
