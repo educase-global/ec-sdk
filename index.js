@@ -86,7 +86,8 @@ const EC_SDK = function (lib) {
     Billing: lib.Billing,
     Broadcast: lib.Broadcast,
     ReportCenter: lib.ReportCenter,
-    Library: lib.Library
+    Library: lib.Library,
+    UserActivity: lib.UserActivity
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
