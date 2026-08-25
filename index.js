@@ -88,7 +88,8 @@ const EC_SDK = function (lib) {
     ReportCenter: lib.ReportCenter,
     Library: lib.Library,
     UserActivity: lib.UserActivity,
-    FeeApproval: lib.FeeApproval
+    FeeApproval: lib.FeeApproval,
+    AttendanceLeaveApproval: lib.AttendanceLeaveApproval
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
