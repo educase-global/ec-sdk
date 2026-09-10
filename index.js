@@ -89,7 +89,8 @@ const EC_SDK = function (lib) {
     Library: lib.Library,
     UserActivity: lib.UserActivity,
     FeeApproval: lib.FeeApproval,
-    AttendanceLeaveApproval: lib.AttendanceLeaveApproval
+    AttendanceLeaveApproval: lib.AttendanceLeaveApproval,
+    DynamicDesign: lib.DynamicDesign
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
