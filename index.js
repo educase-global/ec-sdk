@@ -90,7 +90,6 @@ const EC_SDK = function (lib) {
     UserActivity: lib.UserActivity,
     FeeApproval: lib.FeeApproval,
     AttendanceLeaveApproval: lib.AttendanceLeaveApproval,
-    PayrollSalary: lib.PayrollSalary,
     DynamicDesign: lib.DynamicDesign
   }
 }
