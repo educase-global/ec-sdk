@@ -93,7 +93,8 @@ const EC_SDK = function (lib) {
     PayrollSalary: lib.PayrollSalary,
     DynamicDesign: lib.DynamicDesign,
     ZohoDesk: lib.ZohoDesk,
-    HouseManagement: lib.HouseManagement
+    HouseManagement: lib.HouseManagement,
+    SupportDesk: lib.SupportDesk
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
