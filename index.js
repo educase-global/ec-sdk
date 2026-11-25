@@ -94,7 +94,8 @@ const EC_SDK = function (lib) {
     DynamicDesign: lib.DynamicDesign,
     ZohoDesk: lib.ZohoDesk,
     HouseManagement: lib.HouseManagement,
-    SupportDesk: lib.SupportDesk
+    SupportDesk: lib.SupportDesk,
+    HostelManagement: lib.HostelManagement
   }
 }
 ///////////////////////////Public Functions ENDS////////////////////////////////
